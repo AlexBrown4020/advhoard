@@ -1,0 +1,14 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    color: orange;
+}
+
+#logo {
+    max-width: 120px;
+    border: 7px orange solid;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 1px;
+    background-color:#596171;
+}
