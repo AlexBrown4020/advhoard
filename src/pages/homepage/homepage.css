@@ -1,12 +1,17 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #title {
     display: flex;
     align-items: center;
-    color: orange;
     justify-content: space-around;
 }
 
 #logo {
-    border: 7px orange solid;
+    border: 7px white solid;
     border-radius: 100px;
     padding: 1px;
     background-color:#596171;
@@ -32,4 +37,17 @@
         max-width: 80px;
         margin: 5px;
     }
+}
+
+#images {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.table-image {
+    margin: 10px;
+    max-height: 150px;
+    max-width: 150px;
 }
