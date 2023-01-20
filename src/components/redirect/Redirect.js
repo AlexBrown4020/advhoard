@@ -8,18 +8,19 @@ import './redirect.css'
 export const Redirect = () => {
     return (
         <div id='redirect'>
-            <h2 id='top-banner'>100's of Designs</h2>
-            <h3 id='mid-banner'>Blender, Sculptris, Character/Object Design</h3>
-            <div id='links-container'>
-            <IconButton color='primary'>
+            <IconButton>
                 <HomeIcon/>
             </IconButton>
-            <IconButton color='primary'>
+            <IconButton>
             <   LinkedInIcon/>
             </IconButton>
-            <IconButton color='primary'>
+            <IconButton>
                 <LocalGroceryStoreIcon/>
             </IconButton>
+            <h2 id='top-banner'>100's of Designs</h2>
+            <h3 id='mid-banner'>Blender, Sculptris, Character/Object Design</h3>
+            <h3 id='mid-banner'>FDM/SLA Printing</h3>
+            <div id='links-container'>
             </div>
         </div>
     )
