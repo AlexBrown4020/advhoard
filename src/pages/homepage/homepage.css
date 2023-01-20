@@ -1,53 +1,22 @@
 #home {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-#title {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#logo {
-    border: 7px white solid;
-    border-radius: 100px;
-    padding: 1px;
-    background-color:#596171;
-}
-
-@media screen and (min-width: 601px){
-    #title {
-        font-size: 25px;
-        padding: 10px;
-    }
-    #logo {
-        margin: 10px;
-        max-width: 120px;
-    }
-}
-
-@media screen and (max-width: 600px){
-    #title {
-        font-size: 15px;
-        padding: 5px;
-    }
-    #logo {
-        max-width: 80px;
-        margin: 5px;
-    }
+    /* align-items: center; */
 }
 
 #images {
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
     align-items: center;
-    padding: 10px;
+    flex-direction: row;
 }
 
 .table-image {
     margin: 10px;
-    max-height: 150px;
-    max-width: 150px;
+    height: 150px;
+    width: 150px;
 }
