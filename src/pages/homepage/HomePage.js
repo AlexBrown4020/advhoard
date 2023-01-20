@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar } from '../../components/Navbar';
+import { Redirect } from '../../components/redirect/Redirect'
 
 import './homepage.css'
 
@@ -7,6 +8,7 @@ export default function HomePage() {
     return (
         <div id='home'>
             <Navbar/>
+            <Redirect/>
             <section id='images'>
                 <img class='table-image' alt='oni mask' src='https://iili.io/ynZ4mF.jpg'/>
                 <img class='table-image' alt='painted oni' src='https://iili.io/ynZv0Q.jpg'/>

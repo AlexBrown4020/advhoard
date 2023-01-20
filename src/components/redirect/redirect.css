@@ -1,0 +1,30 @@
+#redirect {
+    border-left: 4px rgb(21, 110, 188) solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+#links-container {
+    display: flex;
+    justify-content: start;
+}
+
+@media screen and (min-width: 601px){
+    #top-banner {
+        font-size: 30px;
+    }
+    
+    #mid-banner {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #top-banner {
+        font-size: 20px;
+    }
+    
+    #mid-banner {
+        font-size: 15px;
+    }
+}
