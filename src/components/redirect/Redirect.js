@@ -9,13 +9,13 @@ export const Redirect = () => {
     return (
         <div id='redirect'>
             <IconButton>
-                <HomeIcon/>
+                <HomeIcon sx={{color:'white'}}/>
             </IconButton>
             <IconButton>
-            <   LinkedInIcon/>
+            <   LinkedInIcon sx={{color:'white'}}/>
             </IconButton>
             <IconButton>
-                <LocalGroceryStoreIcon/>
+                <LocalGroceryStoreIcon sx={{color:'white'}}/>
             </IconButton>
             <h2 id='top-banner'>100's of Designs</h2>
             <h3 id='mid-banner'>Blender, Sculptris, Character/Object Design</h3>
