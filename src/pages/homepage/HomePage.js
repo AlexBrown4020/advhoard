@@ -4,6 +4,7 @@ import { Images } from '../../components/images/Images';
 import './homepage.css'
 
 export default function HomePage() {
+    
     return (
         <div id='home'>
             <Navbar/>

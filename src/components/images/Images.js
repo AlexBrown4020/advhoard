@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import './images.css';
 
 export function Images() {
+    let [isShown, setIsShown] = useState(false)
+    let [image, setImage] = useState('')
 
     const imageData = [{src:'https://iili.io/ynZ4mF.jpg'},
     {src:'https://iili.io/ynZv0Q.jpg'},
@@ -24,8 +27,16 @@ export function Images() {
         <section id='images'>
             {
                 imageData.map((obj) => {
-                    return <img className='table-image' alt='' src={obj.src}></img>
+                    return <img className='table-image' alt='' src={obj.src} onClick={() => {
+                        setIsShown(!isShown);
+                        setImage(obj.src);
+                        
+                    }}/>
                 })
+            } 
+            {
+                isShown ? <img id='modal' alt='' src={image} />
+                : <></>
             }
         </section>
     )
