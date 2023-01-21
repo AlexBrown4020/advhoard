@@ -8,3 +8,7 @@
     height: 150px;
     width: 150px;
 }
+
+.table-image:hover {
+    opacity: 70%;
+}
