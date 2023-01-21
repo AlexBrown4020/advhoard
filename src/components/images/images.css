@@ -1,0 +1,9 @@
+#images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-image {
+    height: 150px;
+    width: 150px;
+}
