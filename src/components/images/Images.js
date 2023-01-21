@@ -1,9 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './images.css';
 
 export function Images() {
+    const ref = useRef(null);
     let [isShown, setIsShown] = useState(false)
     let [image, setImage] = useState('')
+    
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!ref.current.contains(event.target)) {
+                setIsShown(false);
+                setImage('');
+            }
+        };
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, [])
 
     const imageData = [{src:'https://iili.io/ynZ4mF.jpg'},
     {src:'https://iili.io/ynZv0Q.jpg'},
@@ -27,10 +41,10 @@ export function Images() {
         <section id='images'>
             {
                 imageData.map((obj) => {
-                    return <img className='table-image' alt='' src={obj.src} onClick={() => {
+                    return <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
                         setIsShown(!isShown);
                         setImage(obj.src);
-                        
+
                     }}/>
                 })
             } 
