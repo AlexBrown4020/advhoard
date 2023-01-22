@@ -8,6 +8,11 @@
     background-position: center center;
 }
 
+#store-nav {
+    display: flex;
+    align-items: center;
+}
+
 #top-banner {
     -webkit-text-stroke: 1px black;
 }
