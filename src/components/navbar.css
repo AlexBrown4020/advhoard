@@ -37,6 +37,7 @@
 @media screen and (max-width: 600px){
     #nav {
         max-width: 100%;
+        justify-content: space-evenly;
     }
     #title {
         font-size: 10px;
