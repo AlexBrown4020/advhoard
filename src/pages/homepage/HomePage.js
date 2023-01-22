@@ -1,7 +1,8 @@
 import { Navbar } from '../../components/Navbar';
 import { Redirect } from '../../components/redirect/Redirect'
 import { Images } from '../../components/images/Images';
-import './homepage.css'
+import { Footer } from '../../components/footer/Footer';
+import './homepage.css';
 
 export default function HomePage() {
     
@@ -10,6 +11,7 @@ export default function HomePage() {
             <Navbar/>
             <Redirect/>
             <Images/>
+            <Footer/>
         </div>
 
     )

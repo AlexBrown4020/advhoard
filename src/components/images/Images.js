@@ -44,7 +44,6 @@ export function Images() {
                     return <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
                         setIsShown(!isShown);
                         setImage(obj.src);
-
                     }}/>
                 })
             } 
