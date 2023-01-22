@@ -1,11 +1,12 @@
 #redirect {
     border-left: 8px rgb(21, 110, 188) solid;
-    margin: 5px;
     padding: 5px;
     background: url('https://iili.io/Hcqt6Gf.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #store-nav {
