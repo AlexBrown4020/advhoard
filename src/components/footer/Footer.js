@@ -9,9 +9,8 @@ import './footer.css';
 export const Footer = () => {
     return (
         <section id='footer'>
-            <div id='footerTextContainer'>
-                <p className='footer-text'>Alexander Brown, all rights reserved</p>
-                <p className='footer-text'>Updated: 22nd January 2023</p>
+            <div className='footerTextContainer'>
+                <p className='footer-text'>All rights reserved</p>
             </div>
             <div id='website-container'>
                 <div className='website-link'>
@@ -29,11 +28,16 @@ export const Footer = () => {
                         <GitHubIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
-                <div className='website-link'>
+                <div className='website-link' style={{'border-right': 'white 2px solid'}}>
                     <IconButton>
                         <LocalGroceryStoreIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
+            </div>
+            <div className='footerTextContainer'>
+                <p className='footer-text'>
+                    Updated: 22 January 2023
+                </p>
             </div>
         </section>
     )
