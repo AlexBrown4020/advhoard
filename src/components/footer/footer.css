@@ -1,14 +1,16 @@
 #footer {
     width: 100%;
+    border-top: rgb(199, 198, 198) 2px solid;
     display: flex;
     margin-top: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
     background-color: #3b414c;
+    height: 10%;
 }
 
 #footerTextContainer {
-    max-width: 40%;
+    max-width: 35%;
     display: flex;
     flex-direction: column;
 
@@ -16,4 +18,15 @@
 
 .footer-text {
     font-size: 12px;
+}
+
+#website-container {
+    display: flex;
+}
+
+.website-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px white solid;
 }

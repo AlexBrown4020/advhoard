@@ -13,18 +13,28 @@ export const Footer = () => {
                 <p className='footer-text'>Alexander Brown, all rights reserved</p>
                 <p className='footer-text'>Updated: 22nd January 2023</p>
             </div>
-            <IconButton>
-                <HomeIcon/>
-            </IconButton>
-            <IconButton>
-                <LinkedInIcon/>
-            </IconButton>
-            <IconButton>
-                <GitHubIcon/>
-            </IconButton>
-            <IconButton>
-                <LocalGroceryStoreIcon/>
-            </IconButton>
+            <div id='website-container'>
+                <div className='website-link'>
+                    <IconButton>
+                        <HomeIcon sx={{color:'white'}}/>
+                    </IconButton>
+                </div>
+                <div className='website-link'>
+                    <IconButton>
+                        <LinkedInIcon sx={{color:'white'}}/>
+                    </IconButton>
+                </div>
+                <div className='website-link'>
+                    <IconButton>
+                        <GitHubIcon sx={{color:'white'}}/>
+                    </IconButton>
+                </div>
+                <div className='website-link'>
+                    <IconButton>
+                        <LocalGroceryStoreIcon sx={{color:'white'}}/>
+                    </IconButton>
+                </div>
+            </div>
         </section>
     )
 }
