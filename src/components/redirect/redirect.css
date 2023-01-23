@@ -17,6 +17,17 @@
     align-items: center;
 }
 
+#top-container {
+    display: flex;
+}
+
+#banner-logo {
+    max-height: 105px;
+    border-radius: 70px;
+    border: white solid 3px;
+    background-color:#282c34;
+}
+
 #top-banner {
     -webkit-text-stroke: 1px black;
     margin-left: 5%;
@@ -42,11 +53,14 @@
 }
 
 @media screen and (max-width: 600px){
+    #banner-logo {
+        max-height: 75px;
+    }
     #top-banner {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     #mid-banner {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
