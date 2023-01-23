@@ -8,7 +8,6 @@ import './navbar.css';
 export const Navbar = () => {
     return (
         <div id='nav'>
-            <img id='logo' src="https://iili.io/ZoUvBS.png" alt="Adventurers Hoard Logo (circle)" border="0" />
             <IconButton href='#nav' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
                 <SendIcon/>
             </IconButton>
