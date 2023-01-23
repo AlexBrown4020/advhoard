@@ -10,13 +10,13 @@ export const Navbar = () => {
         <div id='nav'>
             <img id='logo' src="https://iili.io/ZoUvBS.png" alt="Adventurers Hoard Logo (circle)" border="0" />
             <h1 id='title'>Adventurer's Hoard</h1>
-            <IconButton sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
+            <IconButton href='#nav' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
                 <SendIcon/>
             </IconButton>
-            <IconButton sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
+            <IconButton href='#images'sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
                 <CameraAltIcon/>
             </IconButton>
-            <IconButton sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
+            <IconButton href='#footer' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
                 <ContactPhoneIcon/>
             </IconButton>
         </div>
