@@ -13,23 +13,23 @@ export const Footer = () => {
                 <p className='footer-text'>Alexander Brown, All rights reserved</p>
             </div>
             <div id='website-container'>
-                <div className='website-link'>
-                    <IconButton>
+                <div className='website-link' >
+                    <IconButton href='https://portfolio-page-adb.herokuapp.com/index.html'>
                         <HomeIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
                 <div className='website-link'>
-                    <IconButton>
+                    <IconButton href='https://www.linkedin.com/in/alex-brown-2a6b7820a/'>
                         <LinkedInIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
                 <div className='website-link'>
-                    <IconButton>
+                    <IconButton href='https://github.com/AlexBrown4020'>
                         <GitHubIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
                 <div className='website-link' style={{'border-right': 'white 2px solid'}}>
-                    <IconButton>
+                    <IconButton href='https://www.etsy.com/uk/shop/AdventurersHoardShop?ref=seller-platform-mcnav'>
                         <LocalGroceryStoreIcon sx={{color:'white'}}/>
                     </IconButton>
                 </div>
