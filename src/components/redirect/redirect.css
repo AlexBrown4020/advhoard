@@ -5,11 +5,9 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 60%;
+    width: 90%;
 }
 
 #store-nav {
@@ -19,10 +17,11 @@
 
 #top-container {
     display: flex;
+    align-items: center;
 }
 
 #banner-logo {
-    max-height: 105px;
+    max-height: 80px;
     border-radius: 70px;
     border: white solid 3px;
     background-color:#282c34;

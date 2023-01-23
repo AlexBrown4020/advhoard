@@ -1,8 +1,8 @@
 #images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content:center;
+    background-color: rgb(59, 59, 59)
 }
 
 .table-image {
