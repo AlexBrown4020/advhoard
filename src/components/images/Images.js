@@ -5,8 +5,6 @@ export function Images() {
     const ref = useRef(null);
     let [isShown, setIsShown] = useState(false);
     let [image, setImage] = useState('');
-    let [pageCount, setPageCount] = useState(10);
-    let [page, setPage] = useState(1);
     
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -54,7 +52,7 @@ export function Images() {
     return (
         <section id='images'>
             {
-                imageData.slice(pageCount -10, pageCount).map((obj) => {
+                imageData.map((obj) => {
                     return <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
                         setIsShown(!isShown);
                         setImage(obj.src);
