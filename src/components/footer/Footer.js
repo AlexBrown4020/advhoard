@@ -10,7 +10,7 @@ export const Footer = () => {
     return (
         <section id='footer'>
             <div className='footerTextContainer'>
-                <p className='footer-text'>All rights reserved</p>
+                <p className='footer-text'>Alexander Brown, All rights reserved</p>
             </div>
             <div id='website-container'>
                 <div className='website-link'>
@@ -36,7 +36,7 @@ export const Footer = () => {
             </div>
             <div className='footerTextContainer'>
                 <p className='footer-text'>
-                    Updated: 22 January 2023
+                © 23rd January 2023
                 </p>
             </div>
         </section>
