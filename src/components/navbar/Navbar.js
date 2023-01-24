@@ -8,7 +8,7 @@ import './navbar.css'
 export const Navbar = () => {
     return (
         <div id='nav'>
-            <IconButton href='#nav' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
+            <IconButton href='#redirect' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
                 <SendIcon/>
             </IconButton>
             <IconButton href='#images'sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
