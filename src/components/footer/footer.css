@@ -1,11 +1,9 @@
 #footer {
     display: flex;
-    min-height: 100vh;
     min-height: 100%;
     align-items: center;
     justify-content:space-evenly;
     background-color: #3b414c;
-    padding: 4px;
     width: 100%;
 }
 

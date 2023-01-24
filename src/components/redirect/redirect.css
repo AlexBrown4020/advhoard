@@ -1,5 +1,4 @@
 #redirect {
-    padding: 5px;
     background: url('https://iili.io/Hcqt6Gf.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -17,6 +16,8 @@
 #top-container {
     display: flex;
     align-items: center;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
 #banner-logo {
@@ -33,6 +34,7 @@
 
 #mid-banner {
     -webkit-text-stroke: 1px black;
+    padding-left: 5%;
 }
 
 #links-container {
