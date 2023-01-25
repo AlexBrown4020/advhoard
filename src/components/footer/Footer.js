@@ -8,29 +8,13 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { Suggestions } from '../../components/suggestions/Suggestions';
 import './footer.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 
 export const Footer = () => {
-    let [modal, setModal] = useState(false);
-    const ref = useRef(null);
-    let [isShown, setIsShown] = useState(false);
-    let [image, setImage] = useState('');
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!ref.current.contains(event.target)) {
-                setIsShown(false);
-                setImage('');
-            }
-        };
-        document.addEventListener('click', handleClickOutside, true);
-        return () => {
-            document.removeEventListener('click', handleClickOutside, true);
-        };
-    }, []);
+    let [suggestion, setSuggestion] = useState(false);
 
     const openSuggestion = () => {
-        setModal(!modal);
+        setSuggestion(true);
     }
 
     return (
@@ -84,7 +68,7 @@ export const Footer = () => {
                 </div>
             </div>
            {
-                modal ? <Suggestions/>:
+                suggestion ? <Suggestions/>:
                 <></>
            }
         </section>
