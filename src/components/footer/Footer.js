@@ -13,8 +13,8 @@ import { useState } from 'react';
 export const Footer = () => {
     let [suggestion, setSuggestion] = useState(false);
 
-    const openSuggestion = () => {
-        setSuggestion(true);
+    const toggleSuggestion = () => {
+        setSuggestion(!suggestion);
     }
 
     return (
@@ -22,7 +22,7 @@ export const Footer = () => {
             <div id='suggestion-container'>
                 <div className='suggestion-icon-container'>
                     <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
-                        openSuggestion();
+                        toggleSuggestion();
                     }}>
                         <p className='suggestion-title'>Suggestions</p>
                         <ChatIcon/>
@@ -68,7 +68,7 @@ export const Footer = () => {
                 </div>
             </div>
            {
-                suggestion ? <Suggestions/>:
+                suggestion ? <Suggestions toggle={toggleSuggestion}/>:
                 <></>
            }
         </section>

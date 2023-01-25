@@ -2,12 +2,20 @@
     background-color: #454d5c;
     border: 1px white solid;
     position: fixed;
-    padding: 25px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: white 2px solid;
+}
+
+#suggestion-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #suggestion-title {
