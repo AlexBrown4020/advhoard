@@ -1,10 +1,28 @@
 #footer {
     display: flex;
     min-height: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content:space-evenly;
+    flex-direction: column;
     background-color: #3b414c;
     width: 100%;
+}
+
+#suggestion-container {
+    display: flex;
+    justify-content: center;
+    background-color: #4a515d;
+    width: 100%;
+    align-items: center;
+
+}
+
+#info-container {
+    display: flex;
+}
+
+.suggestion-title {
+ font-size: 10px;
 }
 
 .footerTextContainer {
