@@ -36,7 +36,7 @@ export const Footer = () => {
             </div>
             <div className='footerTextContainer'>
                 <p className='footer-text'>
-                © 23rd January 2023
+                © 25th January 2023
                 </p>
             </div>
         </section>
