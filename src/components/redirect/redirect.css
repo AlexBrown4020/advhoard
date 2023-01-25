@@ -16,8 +16,19 @@
 #top-container {
     display: flex;
     align-items: center;
-    padding-left: 10%;
-    padding-top: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+
+#suggestion-container {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.suggestion-title {
+ font-size: 10px;
 }
 
 #banner-logo {
