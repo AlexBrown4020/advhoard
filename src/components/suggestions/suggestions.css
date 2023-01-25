@@ -1,5 +1,15 @@
 #suggestions {
     background-color: #454d5c;
-    padding: 20px;
     border: 1px white solid;
+    position: fixed;
+    padding: 25px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: white 2px solid;
+}
+
+#suggestion-title {
+    font-size: 23px;
 }

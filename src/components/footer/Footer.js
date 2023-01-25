@@ -6,14 +6,40 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import { Suggestions } from '../../components/suggestions/Suggestions';
 import './footer.css';
+import { useState, useEffect, useRef } from 'react';
 
 export const Footer = () => {
+    let [modal, setModal] = useState(false);
+    const ref = useRef(null);
+    let [isShown, setIsShown] = useState(false);
+    let [image, setImage] = useState('');
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!ref.current.contains(event.target)) {
+                setIsShown(false);
+                setImage('');
+            }
+        };
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, []);
+
+    const openSuggestion = () => {
+        setModal(!modal);
+    }
+
     return (
         <section id='footer'>
             <div id='suggestion-container'>
                 <div className='suggestion-icon-container'>
-                    <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}}>
+                    <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
+                        openSuggestion();
+                    }}>
                         <p className='suggestion-title'>Suggestions</p>
                         <ChatIcon/>
                     </IconButton>
@@ -57,7 +83,10 @@ export const Footer = () => {
                     </p>
                 </div>
             </div>
-           
+           {
+                modal ? <Suggestions/>:
+                <></>
+           }
         </section>
     )
 }
