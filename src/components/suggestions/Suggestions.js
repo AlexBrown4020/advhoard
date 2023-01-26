@@ -11,8 +11,7 @@ export const Suggestions = ({toggle}) => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, process.env.YOUR_PUBLIC_KEY
+        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
         ).then((response) => {
             console.log('Successfully sent', response.state, response.text);
         }).catch((err) => {
@@ -29,8 +28,8 @@ export const Suggestions = ({toggle}) => {
                 </IconButton>
             </div>
                 <form ref={form} id='suggestion-bottom' onSubmit={onSubmit}>
-                    <input className='input-val' type='text' placeholder='Name' name='from'/>
-                    <input className='input-val' type='text' placeholder='Email' name='email'/>
+                    <input className='input-val' type='text' placeholder='Name' name='from_name'/>
+                    <input className='input-val' type='text' placeholder='Email' name='reply_to'/>
                     <textarea id='text-val' type='text' placeholder='Suggestion' name='message'/>
                     <button id='input-submit' type='submit'>Submit</button>
                 </form>
