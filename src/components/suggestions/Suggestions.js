@@ -1,4 +1,4 @@
-import { IconButton } from "@mui/material";
+import { IconButton, TextField } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import emailjs from '@emailjs/browser';
 
@@ -28,9 +28,9 @@ export const Suggestions = ({toggle}) => {
                 </IconButton>
             </div>
                 <form ref={form} id='suggestion-bottom' onSubmit={onSubmit}>
-                    <input className='input-val' type='text' placeholder='Name' name='from_name'/>
-                    <input className='input-val' type='text' placeholder='Email' name='reply_to'/>
-                    <textarea id='text-val' type='text' placeholder='Suggestion' name='message'/>
+                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Name' type='text' name='from_name'/>
+                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Email' type='text'  name='reply_to'/>
+                    <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Comments' multiline={true} type='text' name='message'/>
                     <button id='input-submit' type='submit'>Submit</button>
                 </form>
         </section>
