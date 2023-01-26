@@ -12,7 +12,7 @@ export const Suggestions = ({toggle}) => {
     const onSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, process.env.YOUR_PUBLIC_KEY
         ).then((response) => {
             console.log('Successfully sent', response.state, response.text);
         }).catch((err) => {
