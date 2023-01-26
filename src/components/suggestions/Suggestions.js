@@ -28,9 +28,9 @@ export const Suggestions = ({toggle}) => {
                 </IconButton>
             </div>
                 <form ref={form} id='suggestion-bottom' onSubmit={onSubmit}>
-                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Name' type='text' name='from_name'/>
-                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Email' type='text'  name='reply_to'/>
-                    <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}, input: {color: 'white'}}} variant='filled' label='Comments' multiline={true} type='text' name='message'/>
+                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Name' type='text' name='from_name'/>
+                    <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Email' type='text'  name='reply_to'/>
+                    <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}}} inputProps={{style:{color:'white'}}} rows={2} variant='filled' label='Comments' multiline={true} type='text' name='message'/>
                     <button id='input-submit' type='submit'>Submit</button>
                 </form>
         </section>
