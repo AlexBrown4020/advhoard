@@ -23,7 +23,7 @@ export const Suggestions = ({toggle}) => {
         <section id='suggestions'>
             <div id='suggestion-top'>
                 <h3>Suggestions</h3>
-                <IconButton sx={{color:'white', 'multiline':true, 'minRows':3}} onClick={(toggle)}>
+                <IconButton sx={{color:'white'}} onClick={(toggle)}>
                     <CloseIcon/>
                 </IconButton>
             </div>
