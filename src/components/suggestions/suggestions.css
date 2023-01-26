@@ -3,8 +3,9 @@
     border: 1px white solid;
     position: fixed;
     padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
     align-items: center;
     top: 50%;
     left: 50%;
@@ -14,10 +15,27 @@
 
 #suggestion-top {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
 }
 
 #suggestion-title {
     font-size: 23px;
+}
+
+#suggestion-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+.input-val {
+    margin: 5px;
+    padding: 5px;
+    max-width: 100%;
+}
+
+#input-submit {
+    max-width: 100%;
 }
