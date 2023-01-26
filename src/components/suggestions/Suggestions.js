@@ -1,35 +1,23 @@
 import { IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
-import { send } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import './suggestions.css';
-import { useState } from "react";
+import { useRef } from "react";
 
 export const Suggestions = ({toggle}) => {
-    let EMAIL = process.env.EMAIL;
-    const [toSend, setToSend] = useState({
-        from: '',
-        to: EMAIL,
-        email: '',
-        message: ''
-    });
+
+    const form = useRef();
 
     const onSubmit = (e) => {
         e.preventDefault();
-        send(
-            `${EMAIL}`,
-            'TEMPLE ID',
-            toSend,
-            'Public Key'
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
         ).then((response) => {
             console.log('Successfully sent', response.state, response.text);
         }).catch((err) => {
-            console.log('Failed', err)
+            console.log('Failed', err.text, err)
         })
-    }
-
-    const handleChange = (e) => {
-        setToSend({...toSend, [e.target.name]: e.target.value})
     }
 
     return (
@@ -40,10 +28,10 @@ export const Suggestions = ({toggle}) => {
                     <CloseIcon/>
                 </IconButton>
             </div>
-                <form id='suggestion-bottom' onSubmit={onSubmit}>
-                    <input className='input-val' type='text' placeholder='Name' name='from' value={toSend.from} onChange={handleChange}/>
-                    <input className='input-val' type='text' placeholder='Email' name='email' value={toSend.email} onChange={handleChange}/>
-                    <textarea id='text-val' type='text' placeholder='Suggestion' name='message' value={toSend.message} onChange={handleChange}/>
+                <form ref={form} id='suggestion-bottom' onSubmit={onSubmit}>
+                    <input className='input-val' type='text' placeholder='Name' name='from'/>
+                    <input className='input-val' type='text' placeholder='Email' name='email'/>
+                    <textarea id='text-val' type='text' placeholder='Suggestion' name='message'/>
                     <button id='input-submit' type='submit'>Submit</button>
                 </form>
         </section>
