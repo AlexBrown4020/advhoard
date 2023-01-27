@@ -19,8 +19,8 @@
     justify-content:space-between;
 }
 
-#suggestion-title {
-    font-size: 23px;
+.contact-info {
+    font-size: 15px;
 }
 
 #contact-bottom {
