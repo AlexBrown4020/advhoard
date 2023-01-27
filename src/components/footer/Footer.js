@@ -20,7 +20,7 @@ export const Footer = () => {
     return (
         <section id='footer'>
             <div id='suggestion-container'>
-                <div className='suggestion-icon-container'>
+                <div>
                     <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
                         toggleSuggestion();
                     }}>
@@ -28,9 +28,9 @@ export const Footer = () => {
                         <ChatIcon/>
                     </IconButton>
                 </div>
-                <div className='suggestion-icon-container'>
+                <div>
                     <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}}>
-                        <p className='suggestion-title'>Requests</p>
+                        <p className='suggestion-title'>Commissions:</p>
                         <EngineeringIcon/>
                     </IconButton>
                 </div>
