@@ -1,9 +1,24 @@
 import { IconButton, TextField } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import emailjs from '@emailjs/browser';
 
 import '../suggestions/contact.css';
+import { useRef } from "react";
 
 export const Commissions = ({toggleC}) => {
+
+    const form = useRef();
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
+        ).then((response) => {
+            console.log('Successfully sent', response.state, response.text);
+        }).catch((err) => {
+            console.log('Failed', err.text, err)
+        });
+    }
+
     return (
         <section id='contact'>
             <div id='contact-top'>
@@ -12,7 +27,7 @@ export const Commissions = ({toggleC}) => {
                     <CloseIcon/>
                 </IconButton>
             </div>
-            <div>
+            <div id='contact-info-body'>
                 <p className='contact-info'>When requesting a commission, please note:</p>
                 <ul>
                     <li className='contact-info'>Depending on current work load, commissions may take time.</li>
@@ -24,10 +39,10 @@ export const Commissions = ({toggleC}) => {
                     (images, videos, schematics, etc) to get the closest approximation of your product.  
                 </p>
             </div>
-            <form id='contact-bottom'>
+            <form id='contact-bottom' ref={form} onSubmit={onSubmit}>
                 <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Name' type='text' name='from_name'/>
                 <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Email' type='text'  name='reply_to'/>
-                <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}}} inputProps={{style:{color:'white'}}} rows={2} variant='filled' label='Comments' multiline={true} type='text' name='message'/>
+                <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}}} inputProps={{style:{color:'white'}}} rows={2} variant='filled' label='Message' multiline={true} type='text' name='message'/>
                 <button id='input-submit' type='submit'>Submit</button>
             </form>
         </section>

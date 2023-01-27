@@ -19,6 +19,12 @@
     justify-content:space-between;
 }
 
+#contact-info-body {
+    background-color: #383e48;
+    padding: 8px;
+    border:2px solid gray;
+}
+
 .contact-info {
     font-size: 15px;
 }
