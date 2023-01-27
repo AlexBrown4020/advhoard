@@ -3,7 +3,7 @@ import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
 import { IconButton } from '@mui/material';
 
-import './navbar.css'
+import './navbar.css';
 
 export const Navbar = () => {
     return (
@@ -19,7 +19,4 @@ export const Navbar = () => {
             </IconButton>
         </div>
     )
-
 }
-
-

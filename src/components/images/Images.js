@@ -53,7 +53,7 @@ export function Images() {
     {src: 'https://iili.io/Hl8hBZF.jpg'},  
     {src: 'https://iili.io/Hl8h3vV.jpg'},
     {src:'https://iili.io/ynZ2UB.jpg'},
-]
+];
 
     return (
         <section id='images'>

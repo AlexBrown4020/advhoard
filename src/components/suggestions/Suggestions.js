@@ -16,7 +16,7 @@ export const Suggestions = ({toggle}) => {
             console.log('Successfully sent', response.state, response.text);
         }).catch((err) => {
             console.log('Failed', err.text, err)
-        })
+        });
     }
 
     return (

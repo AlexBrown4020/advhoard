@@ -15,7 +15,7 @@ export const Footer = () => {
 
     const toggleSuggestion = () => {
         setSuggestion(!suggestion);
-    }
+    };
 
     return (
         <section id='footer'>
