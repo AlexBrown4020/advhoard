@@ -22,25 +22,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
     flex-direction: column;
-    background-color:gray;
-    width:60%;
+    background-color: rgb(60, 60, 59);
+    border: 2px white ridge;
 }
 
-.modal-image {
-    width: 60%;
-    height: 60%;
-}
+
+
 
 @media screen and (min-width: 601px){
-    #modal {
-        max-width: 70vh;
-        max-height: 70vh;
+    .modal-image {
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 600px){
-    #modal {
-        max-width: 85%;
-        max-height: 85%;
+    .modal-container {
+        width: 80%;
+    }
+    .modal-image {
+        width:100%;
     }
 }
