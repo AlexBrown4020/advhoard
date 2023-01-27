@@ -14,14 +14,12 @@ export const Commissions = ({toggleC}) => {
         emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
         ).then((response) => {
             console.log('Successfully sent', response.state, response.text);
-            alert("Email sent successfully")
+            alert("Email sent successfully");
             toggleC();
         }).catch((err) => {
-            console.log('Failed', err.text, err)
-            alert("Email error encountered")
+            console.log('Failed', err.text, err);
+            alert("Email error encountered");
         });
-
-
     }
 
     return (

@@ -17,7 +17,7 @@ export const Suggestions = ({toggleS}) => {
             alert("Email sent successfully");            
             toggleS();
         }).catch((err) => {
-            console.log('Failed', err.text, err)
+            console.log('Failed', err.text, err);
             alert("Email error encountered");         
         });
     }
