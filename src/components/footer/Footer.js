@@ -7,20 +7,36 @@ import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { Suggestions } from '../../components/suggestions/Suggestions';
+import { Commissions } from '../commissions/Commissions';
 import './footer.css';
 import { useState } from 'react';
 
 export const Footer = () => {
     let [suggestion, setSuggestion] = useState(false);
+    let [commission, setCommission] = useState(false);
 
     const toggleSuggestion = () => {
+        setCommission(false);
         setSuggestion(!suggestion);
     };
 
+    const toggleCommission = () => {
+        setSuggestion(false);
+        setCommission(!commission);
+    }
+
     return (
         <section id='footer'>
+            {
+                suggestion ? <Suggestions toggleS={toggleSuggestion}/>:
+                <></>
+            }
+            {
+                commission ? <Commissions toggleC={toggleCommission}/>:
+                <></>
+            }
             <div id='suggestion-container'>
-                <div className='suggestion-icon-container'>
+                <div>
                     <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
                         toggleSuggestion();
                     }}>
@@ -28,9 +44,11 @@ export const Footer = () => {
                         <ChatIcon/>
                     </IconButton>
                 </div>
-                <div className='suggestion-icon-container'>
-                    <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}}>
-                        <p className='suggestion-title'>Requests</p>
+                <div>
+                    <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
+                        toggleCommission();
+                    }}>
+                        <p className='suggestion-title'>Commissions:</p>
                         <EngineeringIcon/>
                     </IconButton>
                 </div>
@@ -67,10 +85,6 @@ export const Footer = () => {
                     </p>
                 </div>
             </div>
-           {
-                suggestion ? <Suggestions toggle={toggleSuggestion}/>:
-                <></>
-           }
         </section>
     )
 }
