@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.1.4 public/lament/LC.gltf -r public
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Model(props) {
+export function LC (props) {
   const { nodes, materials } = useGLTF('/lament/LC.gltf')
   return (
     <group {...props} dispose={null}>

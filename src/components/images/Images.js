@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { LC } from '../../3D/LC';
 import './images.css';
 
 export function Images() {
@@ -20,7 +21,7 @@ export function Images() {
     }, []);
 
     const imageData = [
-    {src:'https://iili.io/ynilat.jpg'},
+    {src:'https://iili.io/ynilat.jpg', model:<LC/>},
     {src: 'https://iili.io/Hlf4Fjt.jpg'},
     {src: 'https://iili.io/Hlq357V.jpg'},
     {src: 'https://iili.io/Hl8h4wP.jpg'},
