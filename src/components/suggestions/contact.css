@@ -1,4 +1,4 @@
-#suggestions {
+#contact {
     background-color: #454d5c;
     border: 1px white solid;
     position: fixed;
@@ -14,7 +14,7 @@
     border: white 2px solid;
 }
 
-#suggestion-top {
+#contact-top {
     display: flex;
     justify-content:space-between;
 }
@@ -23,7 +23,7 @@
     font-size: 23px;
 }
 
-#suggestion-bottom {
+#contact-bottom {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

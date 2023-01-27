@@ -28,11 +28,11 @@ export const Footer = () => {
     return (
         <section id='footer'>
             {
-                suggestion ? <Suggestions toggle={toggleSuggestion}/>:
+                suggestion ? <Suggestions toggleS={toggleSuggestion}/>:
                 <></>
             }
             {
-                commission ? <Commissions toggle={toggleCommission}/>:
+                commission ? <Commissions toggleC={toggleCommission}/>:
                 <></>
             }
             <div id='suggestion-container'>
