@@ -1,4 +1,4 @@
-import { IconButton, TextField } from '@mui/material';
+import { IconButton, TextField, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import emailjs from '@emailjs/browser';
 
@@ -48,7 +48,7 @@ export const Commissions = ({toggleC}) => {
                 <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Name' type='text' name='from_name'/>
                 <TextField sx={{width: '50%', padding: '5px', label:{color: 'white'}, input:{color: 'white'}}} variant='filled' label='Email' type='text'  name='reply_to'/>
                 <TextField sx={{width: '70%', padding: '5px', label:{color: 'white'}}} inputProps={{style:{color:'white'}}} rows={2} variant='filled' label='Message' multiline={true} type='text' name='message'/>
-                <button id='input-submit' type='submit'>Submit</button>
+                <Button id='input-submit' sx={{border:'1px solid white', color:'white'}} variant='outlined' type='submit'>Submit</Button>
             </form>
         </section>
     )
