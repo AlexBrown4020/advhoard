@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/' element={<Model/>}/>
+          <Route path='/model/:id' element={<Model/>}/>
         </Routes>
       </header>
     </div>

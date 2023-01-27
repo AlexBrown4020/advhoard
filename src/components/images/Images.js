@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { LC } from '../../3D/LC';
 import './images.css';
 
@@ -6,6 +7,7 @@ export function Images() {
     const ref = useRef(null);
     let [isShown, setIsShown] = useState(false);
     let [image, setImage] = useState('');
+    let [name, setName] = useState('');
     
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -21,7 +23,7 @@ export function Images() {
     }, []);
 
     const imageData = [
-    {src:'https://iili.io/ynilat.jpg', model:<LC/>},
+    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', model:<LC/>},
     {src: 'https://iili.io/Hlf4Fjt.jpg'},
     {src: 'https://iili.io/Hlq357V.jpg'},
     {src: 'https://iili.io/Hl8h4wP.jpg'},
@@ -60,14 +62,23 @@ export function Images() {
         <section id='images'>
             {
                 imageData.map((obj) => {
-                    return <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
+                    return <div>
+                        <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
                         setIsShown(!isShown);
                         setImage(obj.src);
+                        setName(obj.name);
                     }}/>
+                        </div>
                 })
             } 
             {
-                isShown ? <img id='modal' alt='' src={image} />
+                isShown ? 
+                    <div className='modal-container'>
+                        <img className='modal-image' alt='' src={image} />
+                        <Link className='object-link' to={`/model/${image}`}>
+                            {name}
+                        </Link>
+                    </div>
                 : <></>
             }
         </section>

@@ -14,13 +14,21 @@
     opacity: 70%;
 }
 
-#modal {
+.modal-container {
+    display: flex;
     position: fixed;
     align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: white 5px solid;
+    flex-direction: column;
+    background-color:gray;
+    width:60%;
+}
+
+.modal-image {
+    width: 60%;
+    height: 60%;
 }
 
 @media screen and (min-width: 601px){
