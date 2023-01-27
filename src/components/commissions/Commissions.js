@@ -17,6 +17,8 @@ export const Commissions = ({toggleC}) => {
         }).catch((err) => {
             console.log('Failed', err.text, err)
         });
+        toggleC();
+        alert("Email sent successfully")
     }
 
     return (

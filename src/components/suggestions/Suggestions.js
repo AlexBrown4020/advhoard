@@ -17,6 +17,8 @@ export const Suggestions = ({toggleS}) => {
         }).catch((err) => {
             console.log('Failed', err.text, err)
         });
+        toggleS();
+        alert("Email sent successfully");
     }
 
     return (
