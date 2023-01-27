@@ -5,7 +5,6 @@ import { Footer } from '../../components/footer/Footer';
 import './homepage.css';
 
 export default function HomePage() {
-    
     return (
         <div id='home'>
             <Navbar/>
