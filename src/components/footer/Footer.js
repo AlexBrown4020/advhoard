@@ -27,6 +27,14 @@ export const Footer = () => {
 
     return (
         <section id='footer'>
+            {
+                suggestion ? <Suggestions toggle={toggleSuggestion}/>:
+                <></>
+            }
+            {
+                commission ? <Commissions toggle={toggleCommission}/>:
+                <></>
+            }
             <div id='suggestion-container'>
                 <div>
                     <IconButton sx={{'justify-content': 'center', display: 'flex', 'flex-direction': 'column', color:'white'}} onClick={() => {
@@ -77,14 +85,6 @@ export const Footer = () => {
                     </p>
                 </div>
             </div>
-           {
-                suggestion ? <Suggestions toggle={toggleSuggestion}/>:
-                <></>
-           }
-           {
-                commission ? <Commissions toggle={toggleCommission}/>:
-                <></>
-           }
         </section>
     )
 }

@@ -1,0 +1,15 @@
+#commissions {
+    background-color: #454d5c;
+    border: 1px white solid;
+    position: fixed;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    border: white 2px solid;
+}
