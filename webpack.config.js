@@ -1,3 +1,6 @@
 module.exports = {
-    target: 'node'
+    target: 'node',
+    resolve: {
+        extensions: ['.js', '.jsx']
+    }
 }

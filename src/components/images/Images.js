@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { LC } from '../../3D/LC';
 import './images.css';
 
 export function Images() {
@@ -23,7 +22,7 @@ export function Images() {
     }, []);
 
     const imageData = [
-    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', model:<LC/>},
+    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg'},
     {src: 'https://iili.io/Hlf4Fjt.jpg'},
     {src: 'https://iili.io/Hlq357V.jpg'},
     {src: 'https://iili.io/Hl8h4wP.jpg'},
@@ -75,9 +74,11 @@ export function Images() {
                 isShown ? 
                     <div className='modal-container'>
                         <img className='modal-image' alt='' src={image} />
-                        <Link className='object-link' to={`/model/${image}`}>
-                            {name}
-                        </Link>
+                        <p className='object-link' onClick={() => {
+
+                        }}>
+                            <Link>{name}</Link>
+                        </p>
                     </div>
                 : <></>
             }

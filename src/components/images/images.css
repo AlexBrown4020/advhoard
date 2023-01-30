@@ -26,8 +26,14 @@
     border: 2px white ridge;
 }
 
-
-
+.object-link {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 20px;
+}
 
 @media screen and (min-width: 601px){
     .modal-image {
