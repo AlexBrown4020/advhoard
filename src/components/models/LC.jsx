@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function LC (props) {
-  const { nodes, materials } = useGLTF('/lament/LC.gltf')
+  const { nodes, materials } = useGLTF('/3Dfiles/lament/LC.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -20,10 +20,8 @@ export function LC (props) {
           angle={0.3}
       />
       <group {...props} dispose={null}>
-        <group scale={0.98}>
-          <mesh geometry={nodes.Trace_1.geometry} material={materials.GoldSheen} />
-          <mesh geometry={nodes.Trace_2.geometry} material={materials.Material} />
-        </group>
+        <mesh geometry={nodes.Trace_1.geometry} material={materials.GoldSheen} />
+        <mesh geometry={nodes.Trace_2.geometry} material={materials.Material} />
       </group>
     </Canvas>
   )
