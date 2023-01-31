@@ -26,7 +26,6 @@ export function LC (props) {
         </group>
       </group>
     </Canvas>
-
   )
 }
 

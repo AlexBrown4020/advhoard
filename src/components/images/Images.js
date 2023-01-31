@@ -24,8 +24,8 @@ export function Images() {
 
     const imageData = [
     {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
-    {src: 'https://iili.io/Hlf4Fjt.jpg'},
-    {src: 'https://iili.io/Hlq357V.jpg'},
+    {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'ElfAxe'},
+    {name: 'Ganyu', src: 'https://iili.io/Hlq357V.jpg', path:'Ganyu'},
     {src: 'https://iili.io/Hl8h4wP.jpg'},
     {src: 'https://iili.io/Hl8hOMu.jpg'},
     {src: 'https://iili.io/Hl8hg9V.jpg'},
