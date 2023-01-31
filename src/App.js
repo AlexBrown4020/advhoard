@@ -5,6 +5,9 @@ import HomePage from './pages/homepage/HomePage';
 import { LC } from './components/models/LC';
 import { ElfAxe } from './components/models/ElvenAxeAdvHoard';
 import { Ganyu } from './components/models/Ganyu';
+import { Oni } from './components/models/Oni';
+import { ElfDagger } from './components/models/ElfDagger';
+import { Venom } from './components/models/Venom';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           <Route path='/LC' element={<LC/>}/>
           <Route path='/ElfAxe' element={<ElfAxe/>}/>
           <Route path='/Ganyu' element={<Ganyu/>}/>
+          <Route path='/Oni' element={<Oni/>}/>
+          <Route path='/ElfDagger' element={<ElfDagger/>}/>
+          <Route path='/Venom' element={<Venom/>}/>
         </Routes>
       </header>
     </div>

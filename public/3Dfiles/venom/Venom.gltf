@@ -1,0 +1,111 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Plane.147",
+            "rotation" : [
+                0.02552657760679722,
+                0.03609604015946388,
+                -0.5768282413482666,
+                0.8156684041023254
+            ],
+            "scale" : [
+                0.165113627910614,
+                0.17306821048259735,
+                0.1520816832780838
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.147",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 124396,
+            "max" : [
+                14.942363739013672,
+                2.8442420959472656,
+                34.74562454223633
+            ],
+            "min" : [
+                -4.249495983123779,
+                -7.431612014770508,
+                -61.91029357910156
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 124396,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 124396,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 129792,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1492752,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1492752,
+            "byteOffset" : 1492752
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 995168,
+            "byteOffset" : 2985504
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 519168,
+            "byteOffset" : 3980672
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 4499840,
+            "uri" : "Venom.bin"
+        }
+    ]
+}

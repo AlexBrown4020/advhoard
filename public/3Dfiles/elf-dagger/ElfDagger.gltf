@@ -1,0 +1,116 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Plane.001",
+            "rotation" : [
+                0.12328147143125534,
+                0.12328147143125534,
+                -0.6962770223617554,
+                0.6962770819664001
+            ],
+            "scale" : [
+                0.13058114051818848,
+                0.13058114051818848,
+                0.13058114051818848
+            ],
+            "translation" : [
+                0,
+                2.0168190002441406,
+                0.15776953101158142
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 32439,
+            "max" : [
+                32.33997344970703,
+                1.2647106647491455,
+                10.760944366455078
+            ],
+            "min" : [
+                -4.675930023193359,
+                -1.2647137641906738,
+                -4.932564735412598
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 32439,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 32439,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 49284,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 389268,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 389268,
+            "byteOffset" : 389268
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 259512,
+            "byteOffset" : 778536
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 98568,
+            "byteOffset" : 1038048
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1136616,
+            "uri" : "ElfDagger.bin"
+        }
+    ]
+}
