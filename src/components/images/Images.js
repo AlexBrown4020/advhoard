@@ -7,6 +7,7 @@ export function Images() {
     let [isShown, setIsShown] = useState(false);
     let [image, setImage] = useState('');
     let [name, setName] = useState('');
+    let [path, setPath] = useState('');
     
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -22,7 +23,7 @@ export function Images() {
     }, []);
 
     const imageData = [
-    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg'},
+    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
     {src: 'https://iili.io/Hlf4Fjt.jpg'},
     {src: 'https://iili.io/Hlq357V.jpg'},
     {src: 'https://iili.io/Hl8h4wP.jpg'},
@@ -66,6 +67,7 @@ export function Images() {
                         setIsShown(!isShown);
                         setImage(obj.src);
                         setName(obj.name);
+                        setPath(obj.path);
                     }}/>
                         </div>
                 })
@@ -77,7 +79,7 @@ export function Images() {
                         <p className='object-link' onClick={() => {
 
                         }}>
-                            <Link>{name}</Link>
+                            <Link to={`/${path}`}>{name}</Link>
                         </p>
                     </div>
                 : <></>
