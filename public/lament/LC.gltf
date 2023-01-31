@@ -22,8 +22,8 @@
                 0.9781022667884827
             ],
             "translation" : [
-                30,
-                -7.913421630859375,
+                3.814697265625e-06,
+                0,
                 0
             ]
         }
@@ -99,35 +99,35 @@
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 349673,
+            "count" : 349641,
             "max" : [
-                -19.398103713989258,
-                12.168931007385254,
-                2.0523440837860107
+                2.0491695404052734,
+                2.0544919967651367,
+                2.054717540740967
             ],
             "min" : [
-                -23.517236709594727,
-                8.06874942779541,
-                -2.0527751445770264
+                -2.069965362548828,
+                -2.045689582824707,
+                -2.0504016876220703
             ],
             "type" : "VEC3"
         },
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 349673,
+            "count" : 349641,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 349673,
+            "count" : 349641,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5126,
-            "count" : 349673,
+            "count" : 349641,
             "type" : "VEC2"
         },
         {
@@ -141,14 +141,14 @@
             "componentType" : 5126,
             "count" : 24,
             "max" : [
-                -19.45616912841797,
-                12.133389472961426,
-                2.013975143432617
+                1.9911022186279297,
+                2.0189504623413086,
+                2.0163486003875732
             ],
             "min" : [
-                -23.484119415283203,
-                8.105439186096191,
-                -2.013975143432617
+                -2.0368480682373047,
+                -2.008999824523926,
+                -2.011601686477661
             ],
             "type" : "VEC3"
         },
@@ -180,53 +180,53 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 4196076,
+            "byteLength" : 4195692,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 4196076,
-            "byteOffset" : 4196076
+            "byteLength" : 4195692,
+            "byteOffset" : 4195692
         },
         {
             "buffer" : 0,
-            "byteLength" : 2797384,
-            "byteOffset" : 8392152
+            "byteLength" : 2797128,
+            "byteOffset" : 8391384
         },
         {
             "buffer" : 0,
-            "byteLength" : 2797384,
-            "byteOffset" : 11189536
+            "byteLength" : 2797128,
+            "byteOffset" : 11188512
         },
         {
             "buffer" : 0,
             "byteLength" : 2786496,
-            "byteOffset" : 13986920
+            "byteOffset" : 13985640
         },
         {
             "buffer" : 0,
             "byteLength" : 288,
-            "byteOffset" : 16773416
+            "byteOffset" : 16772136
         },
         {
             "buffer" : 0,
             "byteLength" : 288,
-            "byteOffset" : 16773704
+            "byteOffset" : 16772424
         },
         {
             "buffer" : 0,
             "byteLength" : 192,
-            "byteOffset" : 16773992
+            "byteOffset" : 16772712
         },
         {
             "buffer" : 0,
             "byteLength" : 192,
-            "byteOffset" : 16774184
+            "byteOffset" : 16772904
         },
         {
             "buffer" : 0,
             "byteLength" : 72,
-            "byteOffset" : 16774376
+            "byteOffset" : 16773096
         }
     ],
     "samplers" : [
@@ -237,7 +237,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 16774448,
+            "byteLength" : 16773168,
             "uri" : "LC.bin"
         }
     ]
