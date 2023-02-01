@@ -1,0 +1,116 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.008",
+            "rotation" : [
+                -0.012281356379389763,
+                -0.10892654210329056,
+                0.5508904457092285,
+                -0.8273475170135498
+            ],
+            "scale" : [
+                0.1453903764486313,
+                0.28120458126068115,
+                0.21846003830432892
+            ],
+            "translation" : [
+                -0.0914492979645729,
+                3.8115692138671875,
+                2.0209884643554688
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.008",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 76817,
+            "max" : [
+                77.95767974853516,
+                9.901058197021484,
+                11.725306510925293
+            ],
+            "min" : [
+                -1.994530200958252,
+                -18.05706214904785,
+                -24.618635177612305
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 76817,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 76817,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 87087,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 921804,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 921804,
+            "byteOffset" : 921804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 614536,
+            "byteOffset" : 1843608
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 348348,
+            "byteOffset" : 2458144
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2806492,
+            "uri" : "Gremlin.bin"
+        }
+    ]
+}

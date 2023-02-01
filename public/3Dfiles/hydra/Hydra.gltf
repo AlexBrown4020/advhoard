@@ -1,0 +1,124 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cylinder.001",
+            "rotation" : [
+                -0.16426871716976166,
+                0,
+                0,
+                0.9864156246185303
+            ],
+            "scale" : [
+                0.3927832841873169,
+                0.3927832841873169,
+                0.3927832841873169
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cylinder.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 178541,
+            "max" : [
+                12.319666862487793,
+                29.989181518554688,
+                24.878910064697266
+            ],
+            "min" : [
+                -38.06214904785156,
+                -23.064355850219727,
+                -19.082361221313477
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 178541,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 178541,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 178541,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 199227,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2142492,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2142492,
+            "byteOffset" : 2142492
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1428328,
+            "byteOffset" : 4284984
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1428328,
+            "byteOffset" : 5713312
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 796908,
+            "byteOffset" : 7141640
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 7938548,
+            "uri" : "Hydra.bin"
+        }
+    ]
+}

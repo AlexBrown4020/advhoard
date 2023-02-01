@@ -1,0 +1,124 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cylinder.042",
+            "rotation" : [
+                -0.3225361704826355,
+                -0.17048124969005585,
+                -0.5585474371910095,
+                0.7449371218681335
+            ],
+            "scale" : [
+                0.049156107008457184,
+                0.049156103283166885,
+                0.049156103283166885
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cylinder.022",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 200150,
+            "max" : [
+                121.681640625,
+                78.21845245361328,
+                26.688440322875977
+            ],
+            "min" : [
+                -34.48948669433594,
+                -45.329063415527344,
+                -134.16650390625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 200150,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 200150,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 200150,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 252858,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2401800,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2401800,
+            "byteOffset" : 2401800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1601200,
+            "byteOffset" : 4803600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1601200,
+            "byteOffset" : 6404800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1011432,
+            "byteOffset" : 8006000
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 9017432,
+            "uri" : "Gnoll.bin"
+        }
+    ]
+}
