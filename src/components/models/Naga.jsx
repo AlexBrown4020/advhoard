@@ -13,7 +13,7 @@ export function Naga (props) {
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
-      <ambientLight intensity={0.5}/>
+      <ambientLight intensity={0.1}/>
       <pointLight position={[10,5,10]}/>
       <spotLight
           position={[10, 15, 10]}

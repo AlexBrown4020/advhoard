@@ -29,6 +29,22 @@
             ]
         }
     ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0.1666666716337204,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        }
+    ],
     "meshes" : [
         {
             "name" : "Cylinder.001",
@@ -40,7 +56,8 @@
                         "TEXCOORD_0" : 2,
                         "COLOR_0" : 3
                     },
-                    "indices" : 4
+                    "indices" : 4,
+                    "material" : 0
                 }
             ]
         }
