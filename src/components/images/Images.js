@@ -23,8 +23,8 @@ export function Images() {
     }, []);
 
     const imageData = [
-    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
-    {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'ElfAxe'},
+    {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'public/lament/LC'},
+    {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'public/elf-axe/ElvenAxeAdvHoard'},
     {name: 'Ganyu', src: 'https://iili.io/Hlq357V.jpg', path:'Ganyu'},
     {name: 'Oni', src: 'https://iili.io/H1cvZf1.jpg', path:'Oni'},
     {name:'ElfDagger', src: 'https://iili.io/Hl8hOMu.jpg', path:'ElfDagger'},
