@@ -1,0 +1,166 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Cube.001",
+            "rotation" : [
+                0.001805468462407589,
+                0.005445573013275862,
+                -0.31469693779945374,
+                0.9491748809814453
+            ],
+            "scale" : [
+                1.374959111213684,
+                1.374959111213684,
+                1.374959111213684
+            ],
+            "translation" : [
+                -1.929246425628662,
+                8.997153282165527,
+                22.01422882080078
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Sphere",
+            "rotation" : [
+                0,
+                -0.7372773289680481,
+                0,
+                0.6755902171134949
+            ],
+            "scale" : [
+                1.9220836162567139,
+                0.8593823313713074,
+                0.916053831577301
+            ],
+            "translation" : [
+                -0.37584543228149414,
+                4.838587760925293,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.17271174490451813,
+                    0.8000000715255737,
+                    0.04352255165576935,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 87350,
+            "max" : [
+                1.1967772245407104,
+                8.075439453125,
+                10.558453559875488
+            ],
+            "min" : [
+                -16.57082176208496,
+                -20.36394691467285,
+                -11.15903377532959
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 87350,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 87350,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 87350,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 91758,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1048200,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1048200,
+            "byteOffset" : 1048200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 698800,
+            "byteOffset" : 2096400
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 698800,
+            "byteOffset" : 2795200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 367032,
+            "byteOffset" : 3494000
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 3861032,
+            "uri" : "Wyvern.bin"
+        }
+    ]
+}

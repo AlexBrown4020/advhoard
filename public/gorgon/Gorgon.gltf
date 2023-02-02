@@ -1,0 +1,118 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube",
+            "scale" : [
+                0.466625452041626,
+                0.466625452041626,
+                0.466625452041626
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 381222,
+            "max" : [
+                9.645438194274902,
+                7.8741841316223145,
+                12.060720443725586
+            ],
+            "min" : [
+                -17.778392791748047,
+                -18.523090362548828,
+                -10.625347137451172
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 381222,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 381222,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 381222,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 511218,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 4574664,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4574664,
+            "byteOffset" : 4574664
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3049776,
+            "byteOffset" : 9149328
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3049776,
+            "byteOffset" : 12199104
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2044872,
+            "byteOffset" : 15248880
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 17293752,
+            "uri" : "Gorgon.bin"
+        }
+    ]
+}

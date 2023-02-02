@@ -1,0 +1,111 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Plane.001",
+            "rotation" : [
+                0,
+                0,
+                -0.7051003575325012,
+                0.709107518196106
+            ],
+            "scale" : [
+                3.1439456939697266,
+                3.1439456939697266,
+                3.1439456939697266
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 51083,
+            "max" : [
+                1.1266183853149414,
+                0.46840474009513855,
+                1.062817096710205
+            ],
+            "min" : [
+                -1.3406444787979126,
+                -1.5195380449295044,
+                -1.0911130905151367
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 51083,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 51083,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 53517,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 612996,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 612996,
+            "byteOffset" : 612996
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 408664,
+            "byteOffset" : 1225992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 107034,
+            "byteOffset" : 1634656
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1741692,
+            "uri" : "Protection.bin"
+        }
+    ]
+}

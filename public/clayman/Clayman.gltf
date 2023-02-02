@@ -1,0 +1,133 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cylinder.003",
+            "rotation" : [
+                -0.6925145983695984,
+                -0.03740895912051201,
+                -0.14291082322597504,
+                0.7061165571212769
+            ],
+            "scale" : [
+                0.19423134624958038,
+                0.155793234705925,
+                0.19423134624958038
+            ],
+            "translation" : [
+                -1.9096431732177734,
+                1.5378996133804321,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cylinder.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 69536,
+            "max" : [
+                15.026004791259766,
+                18.527429580688477,
+                14.828365325927734
+            ],
+            "min" : [
+                -9.940473556518555,
+                -32.515708923339844,
+                -59.779666900634766
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 69536,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 69536,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 104688,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 834432,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 834432,
+            "byteOffset" : 834432
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 556288,
+            "byteOffset" : 1668864
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 418752,
+            "byteOffset" : 2225152
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2643904,
+            "uri" : "Clayman.bin"
+        }
+    ]
+}

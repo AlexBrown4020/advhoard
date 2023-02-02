@@ -1,0 +1,128 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.029",
+            "rotation" : [
+                0,
+                0.9731888175010681,
+                0,
+                0.23000764846801758
+            ],
+            "scale" : [
+                0.8097744584083557,
+                0.8097744584083557,
+                0.8097744584083557
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.026",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 161795,
+            "max" : [
+                2.4686827659606934,
+                4.934001445770264,
+                2.621459484100342
+            ],
+            "min" : [
+                -5.673569202423096,
+                -1.2306922674179077,
+                -3.2442755699157715
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 161795,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 161795,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 162591,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1941540,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1941540,
+            "byteOffset" : 1941540
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1294360,
+            "byteOffset" : 3883080
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 650364,
+            "byteOffset" : 5177440
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5827804,
+            "uri" : "Basilisk.bin"
+        }
+    ]
+}

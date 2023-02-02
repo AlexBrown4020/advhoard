@@ -1,0 +1,124 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere.002",
+            "rotation" : [
+                -0.09362947940826416,
+                -0.4026077687740326,
+                0.13530713319778442,
+                0.9004623889923096
+            ],
+            "scale" : [
+                0.43600842356681824,
+                0.43600842356681824,
+                0.43600842356681824
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 412300,
+            "max" : [
+                2.951990842819214,
+                6.25038480758667,
+                4.217495441436768
+            ],
+            "min" : [
+                -7.512762546539307,
+                -11.466751098632812,
+                -6.183230876922607
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 412300,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 412300,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 412300,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 610968,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 4947600,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4947600,
+            "byteOffset" : 4947600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3298400,
+            "byteOffset" : 9895200
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3298400,
+            "byteOffset" : 13193600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2443872,
+            "byteOffset" : 16492000
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 18935872,
+            "uri" : "Genie.bin"
+        }
+    ]
+}
