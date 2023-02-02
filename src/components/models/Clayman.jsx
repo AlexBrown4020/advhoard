@@ -13,11 +13,11 @@ export function Clayman (props) {
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
-      <ambientLight intensity={0.5}/>
-      <pointLight position={[10,5,10]}/>
+      <ambientLight intensity={0.2}/>
+      <pointLight position={[20,5,5]}/>
       <spotLight
           position={[10, 15, 10]}
-          angle={0.3}
+          angle={0.5}
       />
       <group {...props} dispose={null}>
         <mesh geometry={nodes.Cylinder003.geometry} material={nodes.Cylinder003.material} position={[-1.91, 1.54, 0]} rotation={[-1.53, 0.15, -0.26]} scale={[0.19, 0.16, 0.19]} />
