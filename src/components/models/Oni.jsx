@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Oni (props) {
-  const { nodes } = useGLTF('/3Dfiles/oni/Oni.gltf')
+  const { nodes } = useGLTF('/oni/Oni.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Oni (props) {
   )
 }
 
-useGLTF.preload('/3Dfiles/oni/Oni.gltf')
+useGLTF.preload('/oni/Oni.gltf')

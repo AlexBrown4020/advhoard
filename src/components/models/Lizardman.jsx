@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Lizardman (props) {
-  const { nodes } = useGLTF('/3Dfiles/lizardman/Lizardman.gltf');
+  const { nodes } = useGLTF('/lizardman/Lizardman.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Lizardman (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/lizardman/Lizardman.gltf');
+useGLTF.preload('/lizardman/Lizardman.gltf');

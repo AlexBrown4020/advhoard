@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Clayman (props) {
-  const { nodes } = useGLTF('/3Dfiles/clayman/Clayman.gltf')
+  const { nodes } = useGLTF('/clayman/Clayman.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Clayman (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/clayman/Clayman.gltf');
+useGLTF.preload('/clayman/Clayman.gltf');

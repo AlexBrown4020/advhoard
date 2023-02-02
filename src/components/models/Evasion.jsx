@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Evasion (props) {
-  const { nodes } = useGLTF('/3Dfiles/evasion/Evasion.gltf');
+  const { nodes } = useGLTF('/evasion/Evasion.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Evasion (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/evasion/Evasion.gltf');
+useGLTF.preload('/evasion/Evasion.gltf');
