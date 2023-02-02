@@ -28,20 +28,13 @@
     border-radius: 8px;
 }
 
-.model-link-container {
-    display: flex;
-    align-items: center;
-}
-
-.model-link {
+.model-path{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
     margin: 8px;
     padding: 10px;
     border-radius: 20px;
     background-color: rgb(86, 86, 86)
-}
-.model-path{
-    text-decoration: none;
-    color: rgb(219, 219, 219);
 }
 
 .model-link:hover {
