@@ -1,0 +1,158 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Cube.004",
+            "rotation" : [
+                0,
+                0.12078347057104111,
+                0,
+                0.9926788806915283
+            ],
+            "scale" : [
+                0.6389229893684387,
+                0.6389229893684387,
+                0.6389229893684387
+            ],
+            "translation" : [
+                -4.217199325561523,
+                18.454994201660156,
+                -15.302323341369629
+            ]
+        },
+        {
+            "name" : "Cube.008",
+            "translation" : [
+                -4.217199325561523,
+                18.454994201660156,
+                -15.302324295043945
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Cube.010",
+            "rotation" : [
+                -0.03125867247581482,
+                0.16672655940055847,
+                -0.17657311260700226,
+                0.9695602655410767
+            ],
+            "scale" : [
+                0.5681264996528625,
+                0.5681264996528625,
+                0.5681264996528625
+            ],
+            "translation" : [
+                -4.217199325561523,
+                18.454994201660156,
+                -15.302324295043945
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.006",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 221525,
+            "max" : [
+                21.748708724975586,
+                -0.28266701102256775,
+                13.204793930053711
+            ],
+            "min" : [
+                -1.8503825664520264,
+                -40.879642486572266,
+                -20.47765350341797
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 221525,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 221525,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 221525,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 240855,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2658300,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2658300,
+            "byteOffset" : 2658300
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1772200,
+            "byteOffset" : 5316600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1772200,
+            "byteOffset" : 7088800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 963420,
+            "byteOffset" : 8861000
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 9824420,
+            "uri" : "Raziel.bin"
+        }
+    ]
+}

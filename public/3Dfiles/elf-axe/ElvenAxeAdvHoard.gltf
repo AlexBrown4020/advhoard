@@ -1,0 +1,136 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Plane.001",
+            "rotation" : [
+                0,
+                0,
+                0.7071067690849304,
+                0.7071068286895752
+            ],
+            "scale" : [
+                0.5818547010421753,
+                0.5818547010421753,
+                0.5818547010421753
+            ],
+            "translation" : [
+                0,
+                10.596771240234375,
+                0.016222262755036354
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Plane.003",
+            "rotation" : [
+                0,
+                0,
+                -0.7071067690849304,
+                0.7071068286895752
+            ],
+            "scale" : [
+                0.6292557120323181,
+                0.6292557120323181,
+                0.6292557120323181
+            ],
+            "translation" : [
+                0,
+                10.156400680541992,
+                0.009012377820909023
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 114636,
+            "max" : [
+                33.77765655517578,
+                1.542356252670288,
+                10.853507041931152
+            ],
+            "min" : [
+                -19.207393646240234,
+                -1.5453046560287476,
+                -10.852741241455078
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 114636,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 114636,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 172536,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1375632,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1375632,
+            "byteOffset" : 1375632
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 917088,
+            "byteOffset" : 2751264
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 690144,
+            "byteOffset" : 3668352
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 4358496,
+            "uri" : "ElvenAxeAdvHoard.bin"
+        }
+    ]
+}

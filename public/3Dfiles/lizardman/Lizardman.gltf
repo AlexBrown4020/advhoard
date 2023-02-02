@@ -1,0 +1,124 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cylinder.068",
+            "rotation" : [
+                -0.3772238790988922,
+                -0.37744003534317017,
+                -0.1513836532831192,
+                0.8320602178573608
+            ],
+            "scale" : [
+                0.1317322552204132,
+                0.1317322552204132,
+                0.1317322552204132
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cylinder.041",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2,
+                        "COLOR_0" : 3
+                    },
+                    "indices" : 4
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 228454,
+            "max" : [
+                27.18067169189453,
+                24.996063232421875,
+                12.152932167053223
+            ],
+            "min" : [
+                -31.887046813964844,
+                -54.73748016357422,
+                -65.37715911865234
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 228454,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 228454,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 228454,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5125,
+            "count" : 262878,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2741448,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2741448,
+            "byteOffset" : 2741448
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1827632,
+            "byteOffset" : 5482896
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1827632,
+            "byteOffset" : 7310528
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1051512,
+            "byteOffset" : 9138160
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 10189672,
+            "uri" : "Lizardman.bin"
+        }
+    ]
+}

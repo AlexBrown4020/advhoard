@@ -1,0 +1,105 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.005",
+            "translation" : [
+                -1.324388027191162,
+                0.15682050585746765,
+                1.4488389492034912
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 155286,
+            "max" : [
+                1.447061538696289,
+                2.7505693435668945,
+                7.080559253692627
+            ],
+            "min" : [
+                -1.2114462852478027,
+                -2.6910197734832764,
+                -5.597135543823242
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 155286,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 155286,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 237033,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1863432,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1863432,
+            "byteOffset" : 1863432
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1242288,
+            "byteOffset" : 3726864
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 948132,
+            "byteOffset" : 4969152
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5917284,
+            "uri" : "Flintlock.bin"
+        }
+    ]
+}

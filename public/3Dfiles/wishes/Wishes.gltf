@@ -1,0 +1,111 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Icosphere.002",
+            "rotation" : [
+                0.4338266849517822,
+                0.498644083738327,
+                -0.12799447774887085,
+                0.7394363284111023
+            ],
+            "scale" : [
+                0.1430283933877945,
+                0.18326783180236816,
+                0.13047663867473602
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Icosphere.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 63232,
+            "max" : [
+                0.8579432964324951,
+                6.822082042694092,
+                12.862959861755371
+            ],
+            "min" : [
+                -27.044658660888672,
+                -8.944929122924805,
+                -13.270719528198242
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 63232,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 63232,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 95988,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 758784,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 758784,
+            "byteOffset" : 758784
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 505856,
+            "byteOffset" : 1517568
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 191976,
+            "byteOffset" : 2023424
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2215400,
+            "uri" : "Wishes.bin"
+        }
+    ]
+}
