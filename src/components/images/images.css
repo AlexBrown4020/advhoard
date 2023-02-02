@@ -37,7 +37,7 @@
     background-color: rgb(86, 86, 86)
 }
 
-.model-link:hover {
+.model-path:hover {
     background-color: rgb(111, 111, 111)}
 
 @media screen and (min-width: 601px){
