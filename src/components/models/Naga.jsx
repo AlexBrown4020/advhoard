@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Naga (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/naga/Naga.gltf');
+  const { nodes, materials } = useGLTF('/naga/Naga.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -35,4 +35,4 @@ export function Naga (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/naga/Naga.gltf');
+useGLTF.preload('/naga/Naga.gltf');

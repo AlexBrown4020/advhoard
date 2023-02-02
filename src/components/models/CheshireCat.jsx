@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function CheshireCat (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/cheshire-cat/CheshireCat.gltf')
+  const { nodes, materials } = useGLTF('/cheshire-cat/CheshireCat.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -48,4 +48,4 @@ export function CheshireCat (props) {
   )
 }
 
-useGLTF.preload('/3Dfiles/cheshire-cat/CheshireCat.gltf');
+useGLTF.preload('/cheshire-cat/CheshireCat.gltf');

@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Ganyu (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/ganyu/Ganyu.gltf')
+  const { nodes, materials } = useGLTF('/ganyu/Ganyu.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -40,4 +40,4 @@ export function Ganyu (props) {
   )
 }
 
-useGLTF.preload('/3Dfiles/ganyu/Ganyu.gltf')
+useGLTF.preload('/ganyu/Ganyu.gltf')

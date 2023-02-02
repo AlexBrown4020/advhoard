@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Venom (props) {
-  const { nodes } = useGLTF('/3Dfiles/venom/Venom.gltf');
+  const { nodes } = useGLTF('/venom/Venom.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Venom (props) {
   )
 }
 
-useGLTF.preload('/3Dfiles/venom/Venom.gltf');
+useGLTF.preload('/venom/Venom.gltf');

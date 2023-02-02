@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Flintlock (props) {
-  const { nodes } = useGLTF('/3Dfiles/flintlock/Flintlock.gltf');
+  const { nodes } = useGLTF('/flintlock/Flintlock.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Flintlock (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/flintlock/Flintlock.gltf');
+useGLTF.preload('/flintlock/Flintlock.gltf');

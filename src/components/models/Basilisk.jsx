@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Basilisk (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/basilisk/Basilisk.gltf');
+  const { nodes, materials } = useGLTF('/basilisk/Basilisk.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Basilisk (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/basilisk/Basilisk.gltf');
+useGLTF.preload('/basilisk/Basilisk.gltf');

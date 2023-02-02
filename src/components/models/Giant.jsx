@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Giant (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/giant/Giant.gltf');
+  const { nodes, materials } = useGLTF('/giant/Giant.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -36,4 +36,4 @@ export function Giant (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/giant/Giant.gltf');
+useGLTF.preload('/giant/Giant.gltf');

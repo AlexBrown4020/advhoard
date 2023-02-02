@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Gremlin (props) {
-  const { nodes } = useGLTF('/3Dfiles/gremlin/Gremlin.gltf')
+  const { nodes } = useGLTF('/gremlin/Gremlin.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Gremlin (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/gremlin/Gremlin.gltf');
+useGLTF.preload('/gremlin/Gremlin.gltf');

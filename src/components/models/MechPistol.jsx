@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function MechPistol (props) {
-  const { nodes, materials } = useGLTF('/3Dfiles/mech-pistol/MechPistol.gltf');
+  const { nodes, materials } = useGLTF('/mech-pistol/MechPistol.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -31,4 +31,4 @@ export function MechPistol (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/mech-pistol/MechPistol.gltf');
+useGLTF.preload('/mech-pistol/MechPistol.gltf');

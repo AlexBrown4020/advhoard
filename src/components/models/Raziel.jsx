@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Raziel (props) {
-  const { nodes} = useGLTF('/3Dfiles/raziel/Raziel.gltf')
+  const { nodes} = useGLTF('/raziel/Raziel.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -26,4 +26,4 @@ export function Raziel (props) {
   )
 };
 
-useGLTF.preload('/3Dfiles/raziel/Raziel.gltf');
+useGLTF.preload('/raziel/Raziel.gltf');

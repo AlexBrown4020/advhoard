@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Sarenrae (props) {
-  const { nodes } = useGLTF('/3Dfiles/sarenrae/Sarenrae.gltf')
+  const { nodes } = useGLTF('/sarenrae/Sarenrae.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
@@ -27,4 +27,4 @@ export function Sarenrae (props) {
   )
 }
 
-useGLTF.preload('/3Dfiles/sarenrae/Sarenrae.gltf')
+useGLTF.preload('/sarenrae/Sarenrae.gltf')
