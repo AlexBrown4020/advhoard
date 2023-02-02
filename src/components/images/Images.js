@@ -71,11 +71,8 @@ export function Images() {
                 isShown ? 
                     <div className='model-container'>
                         <img className='model-image' alt='' src={image} />
-                        <div className='model'>
-                            <p>
-                                3D:
-                            </p>
-                            <p className='object-link'>
+                        <div className='model-link-container'>
+                            <p className='model-link'>
                                 <Link className='model-path' to={`/${path}`}>{name}</Link>
                             </p>
                         </div>
