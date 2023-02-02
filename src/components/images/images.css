@@ -14,7 +14,7 @@
     opacity: 70%;
 }
 
-.modal-container {
+.model-container {
     display: flex;
     position: fixed;
     align-items: center;
@@ -27,25 +27,30 @@
 }
 
 .object-link {
-    color: white;
-    text-decoration: none;
     margin: 8px;
-    border: 1px white solid;
     padding: 10px;
     border-radius: 20px;
+    background-color: rgb(86, 86, 86)
+}
+.model-path{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
 }
 
+.object-link:hover {
+    background-color: rgb(111, 111, 111)}
+
 @media screen and (min-width: 601px){
-    .modal-image {
+    .model-image {
         width: 80%;
     }
 }
 
 @media screen and (max-width: 600px){
-    .modal-container {
+    .model-container {
         width: 80%;
     }
-    .modal-image {
+    .model-image {
         width:100%;
     }
 }

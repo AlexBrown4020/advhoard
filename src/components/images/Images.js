@@ -37,7 +37,6 @@ export function Images() {
     {src: 'https://iili.io/Hl8hhw7.jpg'},
     {name: 'Hydra', src: 'https://iili.io/Hl8hXuS.jpg', path: 'Hydra'},
     {name: 'Wyvern', src: 'https://iili.io/Hl8hW92.jpg', path: 'Wyvern'},
-    {name: 'Gorgon', src: 'https://iili.io/Hl8hM8l.jpg', path: 'Gorgon'},
     {name: 'Serpent Fly', src: 'https://iili.io/Hl8hGa4.jpg', path: 'SerpentFly'},
     {name: 'Basilisk', src: 'https://iili.io/Hl8hEFf.jpg', path: 'Basilisk'},
     {name: 'Lizardman', src: 'https://iili.io/Hl8h06G.jpg', path: 'Lizardman'},
@@ -49,11 +48,9 @@ export function Images() {
     {name:'Gremlin', src: 'https://iili.io/Hl8huvp.jpg', path: 'Gremlin'},
     {name: 'Mechanical Pistol', src: 'https://iili.io/Hl8hx6J.jpg', path: 'MechPistol'},
     {name: 'Flintlock', src: 'https://iili.io/Hl8hqj1.jpg', path: 'Flintlock'},
-    {src: 'https://iili.io/Hl8hoGa.jpg'},  
-    {src: 'https://iili.io/Hl8hfTP.jpg'},  
-    {src: 'https://iili.io/Hl8hBZF.jpg'},  
-    {src: 'https://iili.io/Hl8h3vV.jpg'},
-    {src:'https://iili.io/ynZ2UB.jpg'},
+    {name: 'Protection', src: 'https://iili.io/Hl8hBZF.jpg', path: 'Protection'},  
+    {name: 'Evasion', src: 'https://iili.io/Hl8h3vV.jpg', path: 'Evasion'},
+    {name: 'Wishes', src:'https://iili.io/ynZ2UB.jpg', path: 'Wishes'},
 ];
 
     return (
@@ -72,13 +69,16 @@ export function Images() {
             } 
             {
                 isShown ? 
-                    <div className='modal-container'>
-                        <img className='modal-image' alt='' src={image} />
-                        <p className='object-link' onClick={() => {
-
-                        }}>
-                            <Link to={`/${path}`}>{name}</Link>
-                        </p>
+                    <div className='model-container'>
+                        <img className='model-image' alt='' src={image} />
+                        <div className='model'>
+                            <p>
+                                3D:
+                            </p>
+                            <p className='object-link'>
+                                <Link className='model-path' to={`/${path}`}>{name}</Link>
+                            </p>
+                        </div>
                     </div>
                 : <></>
             }

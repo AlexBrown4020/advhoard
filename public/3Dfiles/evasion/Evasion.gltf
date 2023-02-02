@@ -1,0 +1,105 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere.018",
+            "scale" : [
+                0.10475175082683563,
+                0.10475175082683563,
+                0.10475175082683563
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.019",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 61379,
+            "max" : [
+                8.004316329956055,
+                12.902178764343262,
+                48.48111343383789
+            ],
+            "min" : [
+                -16.74235725402832,
+                -79.79609680175781,
+                -28.716218948364258
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 61379,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 61379,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 65415,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 736548,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 736548,
+            "byteOffset" : 736548
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 491032,
+            "byteOffset" : 1473096
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 130830,
+            "byteOffset" : 1964128
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 2094960,
+            "uri" : "Evasion.bin"
+        }
+    ]
+}

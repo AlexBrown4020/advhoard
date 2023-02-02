@@ -15,7 +15,6 @@ import { Raziel } from './components/models/Raziel';
 import { Sarenrae } from './components/models/Sarenrae';
 import { Hydra } from './components/models/Hydra';
 import { Wyvern } from './components/models/Wyvern';
-import { Gorgon } from './components/models/Gorgon';
 import { SerpentFly } from './components/models/SerpentFly';
 import { Basilisk } from './components/models/Basilisk';
 import { Lizardman } from './components/models/Lizardman';
@@ -26,6 +25,9 @@ import { Naga } from './components/models/Naga';
 import { Gremlin } from './components/models/Gremlin';
 import { MechPistol } from './components/models/MechPistol';
 import { Flintlock } from './components/models/Flintlock';
+import { Protection } from './components/models/Protection';
+import { Evasion } from './components/models/Evasion';
+import { Wishes } from './components/models/Wishes';
 
 function App() {
   return (
@@ -46,7 +48,6 @@ function App() {
           <Route path='/Sarenrae' element={<Sarenrae/>}/>
           <Route path='/Hydra' element={<Hydra/>}/>
           <Route path='/Wyvern' element={<Wyvern/>}/>
-          <Route path='/Gorgon' element={<Gorgon/>}/>
           <Route path='/SerpentFly' element={<SerpentFly/>}/>
           <Route path='/Basilisk' element={<Basilisk/>}/>
           <Route path='/Lizardman' element={<Lizardman/>}/>
@@ -57,6 +58,9 @@ function App() {
           <Route path='/Gremlin' element={<Gremlin/>}/>
           <Route path='/MechPistol' element={<MechPistol/>}/>
           <Route path='/Flintlock' element={<Flintlock/>}/>
+          <Route path='/Protection' element={<Protection/>}/>
+          <Route path='/Evasion' element={<Evasion/>}/>
+          <Route path='/Wishes' element={<Wishes/>}/>
         </Routes>
       </header>
     </div>
