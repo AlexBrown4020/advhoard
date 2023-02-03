@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function ElfAxe (props) {
-  const { nodes } = useGLTF('/elf-axe/ElvenAxeAdvHoard.gltf')
+  const { nodes } = useGLTF('3DFiles//elf-axe/ElvenAxeAdvHoard.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

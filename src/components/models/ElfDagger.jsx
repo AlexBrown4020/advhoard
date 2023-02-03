@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function ElfDagger (props) {
-  const { nodes } = useGLTF('/elf-dagger/ElfDagger.gltf')
+  const { nodes } = useGLTF('3DFiles//elf-dagger/ElfDagger.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

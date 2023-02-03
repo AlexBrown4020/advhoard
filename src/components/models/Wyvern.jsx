@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Wyvern (props) {
-  const { nodes, materials } = useGLTF('/wyvern/Wyvern.gltf')
+  const { nodes, materials } = useGLTF('3DFiles//wyvern/Wyvern.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

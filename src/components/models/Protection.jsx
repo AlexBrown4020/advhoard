@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Protection (props) {
-  const { nodes } = useGLTF('/protection/Protection.gltf');
+  const { nodes } = useGLTF('3DFiles//protection/Protection.gltf');
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

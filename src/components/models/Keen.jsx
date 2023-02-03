@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Keen (props) {
-  const { nodes } = useGLTF('/keen/Keen.gltf')
+  const { nodes } = useGLTF('3DFiles//keen/Keen.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

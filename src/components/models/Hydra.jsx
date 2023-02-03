@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Hydra (props) {
-  const { nodes } = useGLTF('/hydra/Hydra.gltf')
+  const { nodes } = useGLTF('3DFiles//hydra/Hydra.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />

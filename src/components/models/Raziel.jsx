@@ -9,7 +9,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 export function Raziel (props) {
-  const { nodes} = useGLTF('/raziel/Raziel.gltf')
+  const { nodes} = useGLTF('3DFiles//raziel/Raziel.gltf')
   return (
     <Canvas style={{height: '100vh',width: '100vw'}}>
       <OrbitControls />
