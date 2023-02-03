@@ -35,8 +35,8 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route path='/' element={<HomePage/>}/>
-          <Route path='/public/lament/LC' element={<LC/>}/>
-          <Route path='/public/elf-axe/ElvenAxeAdvHoard' element={<ElfAxe/>}/>
+          <Route path='/LC' element={<LC/>}/>
+          <Route path='/ElvenAxe' element={<ElfAxe/>}/>
           <Route path='/Ganyu' element={<Ganyu/>}/>
           <Route path='/Oni' element={<Oni/>}/>
           <Route path='/ElfDagger' element={<ElfDagger/>}/>
