@@ -24,7 +24,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### 'gltfhjsx public/3Dfiles/___/__.gltf -r public'
+### `gltfhjsx public/3Dfiles/___/__.gltf -r public`
 - Creates a jsx file that contains all the necessary threeJS components to render the 3D model
 - You must have an exported .gltf 3D model in the folder, including a .bin file to correctly compile the jsx.
 
