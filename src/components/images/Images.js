@@ -1,10 +1,7 @@
-import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './images.css';
 
 export function Images() {
-    const ref = useRef(null);
-    
     const imageData = [
     {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
     {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'ElvenAxe'},
@@ -39,10 +36,16 @@ export function Images() {
     return (
         <section id='images'>
             {
-                imageData.map((obj) => {
-                    return <Link className='model-path' to={`/${obj.path}`}>
-                            <img ref={ref} className='table-image' alt='' src={obj.src} />
+                imageData.map((obj, index) => {
+                    if (!obj.name) {
+                        return <Link key={`link-${index}`} className='model-path' to={`/${obj.path}`}>
+                            <img key={`img-${index}`} className='table-image' alt={obj.name} src={obj.src} />
                         </Link>
+                    } else {
+                        return <Link key={`link-${index}`} className='model-path'>
+                            <img key={`img-${index}`} className='table-image' alt={obj.name} src={obj.src}/>
+                        </Link>
+                    }
                 })
             } 
         </section>
