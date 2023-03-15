@@ -81,7 +81,7 @@ export const Footer = () => {
                 </div>
                 <div className='footerTextContainer'>
                     <p className='footer-text'>
-                    © 26th January 2023
+                    © 15th March 2023
                     </p>
                 </div>
             </div>
