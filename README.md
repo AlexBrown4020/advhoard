@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Adventurer's Hoard 3D Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is built to display 3D models online to potential customers, clients or employers.  Powered by React and ThreeJS, the goal was to create an interesting landing page that displayed my work in a 3D space rather than a static, 2D format.  
+
+## Tech Stack:
+
+### Languages:
+- ReactJS
+- JavaScript
+
+### Libraries:
+- ThreeJS
+- emailjs-com
+- Material UI
+
+## Installation:
+- git clone <rep_name>(Copy the repository to your development area)
+- npm i (install all dependencies to your cloned repo)
 
 ## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
-
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `gltfhjsx public/3Dfiles/___/__.gltf -r public`
+- Creates a jsx file that contains all the necessary threeJS components to render the 3D model
+- You must have an exported .gltf 3D model in the folder, including a .bin file to correctly compile the jsx.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Possible Difficulties:
+### Slow rendering
+- You may experience slow rendering and extremely slow responsiveness when viewing the 3D models,
+this may be due to hardware limitations (Phones, tablets, etc).
+- If you import your own models, this could be due to high polycount of the file.  Make sure to decimate the models vertices for a lower polycount for viewing purposes.  
+### View Distance/Camera position is misaligned
+- This may be from exporting your model when it was not positioned at world origin, make sure to set it to world origin ***before*** exporting.
+### No/ or Unusual Shadowing
+- You may see strange shadowing on the model surface despite using a point light.  This is usually from not applying a mesh texture to the model.  
+- Having some metallic (15%) texture will ensure the shadow effect looks less jarring.
