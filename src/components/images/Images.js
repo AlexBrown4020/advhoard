@@ -1,14 +1,36 @@
+import SearchIcon from '@mui/icons-material/Search';
+
+import { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './images.css';
 
 export function Images() {
+    const ref = useRef(null);
+    let [isShown, setIsShown] = useState(false);
+    let [image, setImage] = useState('');
+    let [path, setPath] = useState('');
+    let [name, setName] = useState('');
+    
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (!ref.current.contains(event.target)) {
+                setIsShown(false);
+                setImage('');
+            }
+        };
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, []);
+
     const imageData = [
     {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
     {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'ElvenAxe'},
     {name: 'Ganyu', src: 'https://iili.io/Hlq357V.jpg', path:'Ganyu'},
     {name: 'Oni', src: 'https://iili.io/H1cvZf1.jpg', path:'Oni'},
-    {name:'ElfDagger', src: 'https://iili.io/Hl8hOMu.jpg', path:'ElfDagger'},
-    {name: 'Venom Dagger', src: 'https://iili.io/Hl8hg9V.jpg', path:'/Venom'},
+    {name:'Elf Dagger', src: 'https://iili.io/Hl8hOMu.jpg', path:'ElfDagger'},
+    {name: 'Venom Dagger', src: 'https://iili.io/Hl8hg9V.jpg', path:'Venom'},
     {name: 'Keen Dagger', src: 'https://iili.io/Hl8hS8Q.jpg', path: 'Keen'},
     {name: 'Cheshire Cat', src: 'https://iili.io/Hl8h8cx.jpg', path: 'CheshireCat'},
     {name: 'Clayman', src: 'https://iili.io/Hl8hvFj.jpg', path: 'Clayman'},
@@ -28,26 +50,41 @@ export function Images() {
     {name:'Gremlin', src: 'https://iili.io/Hl8huvp.jpg', path: 'Gremlin'},
     {name: 'Mechanical Pistol', src: 'https://iili.io/Hl8hx6J.jpg', path: 'MechPistol'},
     {name: 'Flintlock', src: 'https://iili.io/Hl8hqj1.jpg', path: 'Flintlock'},
-    {name: 'Protection', src: 'https://iili.io/Hl8hBZF.jpg', path: 'Protection'},  
-    {name: 'Evasion', src: 'https://iili.io/Hl8h3vV.jpg', path: 'Evasion'},
-    {name: 'Wishes', src:'https://iili.io/ynZ2UB.jpg', path: 'Wishes'},
+    {name: 'Ring of Protection', src: 'https://iili.io/Hl8hBZF.jpg', path: 'Protection'},  
+    {name: 'Ring of Evasion', src: 'https://iili.io/Hl8h3vV.jpg', path: 'Evasion'},
+    {name: 'Ring of Wishes', src:'https://iili.io/ynZ2UB.jpg', path: 'Wishes'},
 ];
 
     return (
         <section id='images'>
             {
-                imageData.map((obj, index) => {
-                    if (obj.path) {
-                        return <Link key={`link-${index}`} className='model-path' to={`/${obj.path}`}>
-                            <img key={`img-${index}`} className='table-image' alt={obj.name} src={obj.src} />
-                        </Link>
-                    } else {
-                        return <Link key={`link-${index}`} className='model-path'>
-                            <img key={`img-${index}`} className='table-image' alt={obj.name} src={obj.src}/>
-                        </Link>
-                    }
+                imageData.map((obj) => {
+                    return <div>
+                        <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
+                        setIsShown(!isShown);
+                        setImage(obj.src);
+                        setPath(obj.path);
+                        setName(obj.name)
+                    }}/>
+                        </div>
                 })
             } 
+            {
+                isShown ? 
+                    path ? 
+                    <div className='model-container'>
+                        <img className='model-image' alt='' src={image} />
+                        <div className='model-info'>
+                            <p className='model-title'>{name}</p>
+                            <Link className='model-path' to={`/${path}`}><SearchIcon sx={{fontSize:'50px'}} className='magnifying-glass' alt='magnifying glass'/></Link>
+                        </div>
+                    </div>
+                    : <div className='model-container'>
+                        <img className='model-image' alt='' src={image} />
+                    </div>
+                    
+                : <></>
+            }
         </section>
     )
 }
