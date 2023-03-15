@@ -37,7 +37,7 @@ export function Images() {
         <section id='images'>
             {
                 imageData.map((obj, index) => {
-                    if (!obj.name) {
+                    if (obj.path) {
                         return <Link key={`link-${index}`} className='model-path' to={`/${obj.path}`}>
                             <img key={`img-${index}`} className='table-image' alt={obj.name} src={obj.src} />
                         </Link>
