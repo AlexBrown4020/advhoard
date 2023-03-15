@@ -14,26 +14,12 @@
     opacity: 70%;
 }
 
-.model-container {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    background-color: rgb(60, 60, 59);
-    border: 2px rgb(90, 90, 90) solid;
-    box-shadow: 2px 2px 2px rgb(57, 57, 57);
-    border-radius: 8px;
-}
-
 .model-path{
     text-decoration: none;
     color: rgb(219, 219, 219);
-    margin: 8px;
-    padding: 10px;
-    border-radius: 20px;
+    border: 10px gray solid;
+    margin: 10px;
+    border-radius: 18px;
     background-color: rgb(86, 86, 86)
 }
 
@@ -47,9 +33,6 @@
 }
 
 @media screen and (max-width: 600px){
-    .model-container {
-        width: 80%;
-    }
     .model-image {
         width:100%;
     }

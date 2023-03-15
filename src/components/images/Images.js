@@ -1,34 +1,17 @@
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './images.css';
 
 export function Images() {
     const ref = useRef(null);
-    let [isShown, setIsShown] = useState(false);
-    let [image, setImage] = useState('');
-    let [name, setName] = useState('');
-    let [path, setPath] = useState('');
     
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!ref.current.contains(event.target)) {
-                setIsShown(false);
-                setImage('');
-            }
-        };
-        document.addEventListener('click', handleClickOutside, true);
-        return () => {
-            document.removeEventListener('click', handleClickOutside, true);
-        };
-    }, []);
-
     const imageData = [
     {name:'Lament Configuration', src:'https://iili.io/ynilat.jpg', path:'LC'},
     {name:'Elven Axe', src: 'https://iili.io/Hlf4Fjt.jpg', path:'ElvenAxe'},
     {name: 'Ganyu', src: 'https://iili.io/Hlq357V.jpg', path:'Ganyu'},
     {name: 'Oni', src: 'https://iili.io/H1cvZf1.jpg', path:'Oni'},
     {name:'ElfDagger', src: 'https://iili.io/Hl8hOMu.jpg', path:'ElfDagger'},
-    {name: 'Venom Dagger', src: 'https://iili.io/Hl8hg9V.jpg', path:'Venom'},
+    {name: 'Venom Dagger', src: 'https://iili.io/Hl8hg9V.jpg', path:'/Venom'},
     {name: 'Keen Dagger', src: 'https://iili.io/Hl8hS8Q.jpg', path: 'Keen'},
     {name: 'Cheshire Cat', src: 'https://iili.io/Hl8h8cx.jpg', path: 'CheshireCat'},
     {name: 'Clayman', src: 'https://iili.io/Hl8hvFj.jpg', path: 'Clayman'},
@@ -57,24 +40,11 @@ export function Images() {
         <section id='images'>
             {
                 imageData.map((obj) => {
-                    return <div>
-                        <img ref={ref} className='table-image' alt='' src={obj.src} onClick={() => {
-                        setIsShown(!isShown);
-                        setImage(obj.src);
-                        setName(obj.name);
-                        setPath(obj.path);
-                    }}/>
-                        </div>
+                    return <Link className='model-path' to={`/${obj.path}`}>
+                            <img ref={ref} className='table-image' alt='' src={obj.src} />
+                        </Link>
                 })
             } 
-            {
-                isShown ? 
-                    <div className='model-container'>
-                        <img className='model-image' alt='' src={image} />
-                        <Link className='model-path' to={`/${path}`}>{name}</Link>
-                    </div>
-                : <></>
-            }
         </section>
     )
 }
