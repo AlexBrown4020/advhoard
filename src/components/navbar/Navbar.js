@@ -1,22 +1,25 @@
-import SendIcon from '@mui/icons-material/Send';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import CameraAltIcon from '@mui/icons-material/CameraAlt';
-import { IconButton } from '@mui/material';
-
-import './navbar.css';
+import { NavLink } from "react-router-dom"
 
 export const Navbar = () => {
     return (
-        <div id='nav'>
-            <IconButton href='#home' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
-                <SendIcon/>
-            </IconButton>
-            <IconButton href='#images'sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
-                <CameraAltIcon/>
-            </IconButton>
-            <IconButton href='#footer' sx={{color: 'white', padding: '5px', 'border-radius': '10px', border: '2px white solid'}} variant='outlined'>
-                <ContactPhoneIcon/>
-            </IconButton>
-        </div>
+        <header className="header">
+            <NavLink to="/" className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
+                <p className="blue-gradient_text">Home</p>
+            </NavLink>
+            <nav className="flex text-lg gap-7 font-medium">
+                <NavLink to="/about" className={({isActive}) => isActive ?
+                    "text-blue-500" : "text-black"
+                }>About</NavLink>
+                <NavLink to="/projects" className={({isActive}) => isActive ?
+                    "text-blue-500" : "text-black"
+                }>Projects</NavLink>
+                <NavLink to="/work" className={({isActive}) => isActive ?
+                    "text-blue-500" : "text-black"
+                }>Work</NavLink>
+                <NavLink to="/contact" className={({isActive}) => isActive ?
+                    "text-blue-500" : "text-black"
+                }>Contact</NavLink>
+            </nav>
+        </header>
     )
 }
