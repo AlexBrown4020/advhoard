@@ -1,10 +1,9 @@
-
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 import RobotBase from "./RobotBase1.glb"
 
 export default function RobotScene(props) {
-  const { nodes, materials } = useGLTF(RobotBase);
+  const { nodes } = useGLTF(RobotBase);
   const { robotRef } = props
 
   return (
