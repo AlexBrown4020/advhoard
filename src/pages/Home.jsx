@@ -1,4 +1,4 @@
-import { React, Suspense, useState } from 'react'
+import { React, Suspense, useState, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/navbar/Loader'
 import KitchenScene from '../models/KitchenScene'
@@ -7,6 +7,7 @@ import RobotScene from '../models/RobotScene'
 
 const Home = () => {
     const [isScrolling, setIsScrolling] = useState(false);
+    const robotRef= useRef(null);
 
     const adjustSceneForScreenSize = () => {
         let screenScale = null;
@@ -26,9 +27,7 @@ const Home = () => {
             {/* <div className='absolute top-28 left-0 right-0 z-10 items-center justify-center'>
                 POPUP
             </div> */}
-            <Canvas className={`w-full h-screen bg-transparent ${isScrolling ? 
-                'cursor-grabbing': 'cursor-grab'
-            }`}
+            <Canvas className={`w-full h-screen bg-transparent`}
                 camera={{near: 0.1, far: 1000}}
             >
                 <Suspense fallback={<Loader />} >
@@ -40,8 +39,11 @@ const Home = () => {
                         setIsScrolling={setIsScrolling}
                         position={scenePosition}
                         scale={sceneScale}
+                        robotRef={robotRef}
                     />
-                    <RobotScene />
+                    <RobotScene 
+                        robotRef={robotRef}
+                    />
                     <hemisphereLight skyColor='#b1e1ff' groundColor='#000000' intensity='1' />
                 </Suspense>
             </Canvas>

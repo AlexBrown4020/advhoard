@@ -8,56 +8,68 @@ import { a } from '@react-spring/three';
 import kitchenScene from './Kitchen2.glb';
 import { useThree } from "@react-three/fiber";
 
-export default function KitchenScene({isScrolling, setIsScrolling, ...props}) {
+export default function KitchenScene({isScrolling, setIsScrolling, robotRef, ...props}) {
   const { nodes, materials } = useGLTF(kitchenScene)
   const { gl, viewport } = useThree();
   const lastX = useRef(0);
   const scrollSpeed = useRef(0);
   const kitchenRef = useRef();
 
-  const handlePointerDown = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    setIsScrolling(true);
-    const clientX = e.touches 
-    ? e.touches[0].clientX 
-    : e.clientX;
+  // const handlePointerDown = (e) => {
+  //   e.stopPropagation();
+  //   e.preventDefault();
+  //   setIsScrolling(true);
+  //   const clientX = e.touches 
+  //   ? e.touches[0].clientX 
+  //   : e.clientX;
 
-    lastX.current = clientX;
-  }
+  //   lastX.current = clientX;
+  // }
 
-  const handlePointerUp = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    setIsScrolling(false);
+  // const handlePointerUp = (e) => {
+  //   e.stopPropagation();
+  //   e.preventDefault();
+  //   setIsScrolling(false);
 
-    const clientX = e.touches 
-    ? e.touches[0].clientX 
-    : e.clientX;
+  //   const clientX = e.touches 
+  //   ? e.touches[0].clientX 
+  //   : e.clientX;
 
-    const delta = (clientX - lastX.current) / viewport.width;
+  //   const delta = (clientX - lastX.current) / viewport.width;
 
-    kitchenRef.current.position[0] -= delta * 0.01 * Math.PI;
-    lastX.current = clientX;
+  //   kitchenRef.current.position[0] -= delta * 0.01 * Math.PI;
+  //   lastX.current = clientX;
 
-    scrollSpeed.current = delta * 0.01 * Math.PI;
-  }
+  //   scrollSpeed.current = delta * 0.01 * Math.PI;
+  // }
 
-  const handlePointerMove = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    if (isScrolling) {
-      handlePointerUp(e);
+  const handleWheel = (e) => {
+    if (e.deltaY === -100 && kitchenRef.current.position.z < 25) {
+      console.log(robotRef)
+      setIsScrolling(true);
+      robotRef.current.position.z += .8;
+      kitchenRef.current.position.z += .8;
+    } else if (e.deltaY === 100 && kitchenRef.current.position.z >= -40) {
+      console.log(robotRef)
+      setIsScrolling(true);
+      robotRef.current.position.z -= .8;
+      kitchenRef.current.position.z -= .8;
     }
   }
 
+  // const handlePointerMove = (e) => {
+  //   e.stopPropagation();
+  //   e.preventDefault();
+  //   if (isScrolling) {
+  //     handlePointerUp(e);
+  //   }
+  // }
+
   return (
     <a.group ref={kitchenRef} {...props}
-      onPointerDown={(e) => handlePointerDown(e)}
-      onPointerUp={(e) => handlePointerUp(e)}
-      onPointerMove={(e) => handlePointerMove(e)}
+      onWheel={(e) => {handleWheel(e)}}
     >
-      <group position={[0, -7, -40]} scale={2.093}>
+      <group position={[-.9, -12, -40]} scale={2.093}>
       <mesh
         castShadow
         receiveShadow
