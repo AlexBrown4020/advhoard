@@ -33,9 +33,12 @@ export default function KitchenScene({isScrolling, setIsScrolling, robotRef, ...
     const intersectObjects = [kitchenRef.current];
     const intersects = raycaster.intersectObjects(intersectObjects, true);
     if (intersects.length > 0 && kitchenRef.current.position.z > 24) {
+      console.log(robotRef.current.position)
       const intersection = intersects[0];
       const { point } = intersection;
-      robotRef.current.position.copy(point);
+      console.log(point, robotRef.current.position)
+      robotRef.current.position.x = point.x
+      // robotRef.current.position.copy(point);
     }
   }
 

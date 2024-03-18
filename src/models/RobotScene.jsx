@@ -8,7 +8,7 @@ export default function RobotScene(props) {
 
   return (
     <group ref={robotRef}>
-      <group position={[0.1, -6, -95]} scale={4}>
+      <group position={[0.1, -7, -90]} scale={4}>
         <primitive object={nodes.Bone001} />
         <primitive object={nodes.Bone006} />
       </group>
