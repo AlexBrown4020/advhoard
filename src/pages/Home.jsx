@@ -7,7 +7,7 @@ import RobotScene from '../models/RobotScene'
 
 const Home = () => {
     const [isScrolling, setIsScrolling] = useState(false);
-    const robotRef= useRef(null);
+    const robotRef = useRef();
 
     const adjustSceneForScreenSize = () => {
         let screenScale = null;

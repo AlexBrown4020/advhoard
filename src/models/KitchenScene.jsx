@@ -24,21 +24,35 @@ export default function KitchenScene({isScrolling, setIsScrolling, robotRef, ...
     }
   }
 
+  // const updateHeadRotation = (e) => {
+  //   if (robotRef.current) {
+  //     // Calculate angle between robot position and pointer position
+  //     const deltaX = pointerPosition.x - robotRef.current.position.x;
+  //     const deltaY = pointerPosition.y - robotRef.current.position.y;
+  //     const angle = Math.atan2(deltaY, deltaX);
+  //     // Update head rotation
+  //     robotRef.current.rotation.y = -angle;
+  //   }
+  // }
+
   const handlePointerMove = (e) => {
     const raycaster = new THREE.Raycaster();
     const mouse = new THREE.Vector2();
+    const target = new THREE.Vector3();
     mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
     raycaster.setFromCamera(mouse, e.camera);
     const intersectObjects = [kitchenRef.current];
     const intersects = raycaster.intersectObjects(intersectObjects, true);
     if (intersects.length > 0 && kitchenRef.current.position.z > 24) {
-      console.log(robotRef.current.position)
       const intersection = intersects[0];
       const { point } = intersection;
-      console.log(point, robotRef.current.position)
-      robotRef.current.position.x = point.x
-      // robotRef.current.position.copy(point);
+      const head = robotRef.current.children[0].children[1];
+      target.x += (mouse.x + point.x) * .05;
+      target.y += (-mouse.y - target.y);
+      target.z = e.camera.position.z;
+      head.rotation.x = target.y;
+      head.rotation.y = target.x;
     }
   }
 
