@@ -6,6 +6,7 @@ import { React, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import { a } from '@react-spring/three';
 import kitchenScene from './Kitchen2.glb';
+import * as THREE from 'three';
 
 export default function KitchenScene({isScrolling, setIsScrolling, robotRef, ...props}) {
   const { nodes, materials } = useGLTF(kitchenScene)
@@ -23,9 +24,25 @@ export default function KitchenScene({isScrolling, setIsScrolling, robotRef, ...
     }
   }
 
+  const handlePointerMove = (e) => {
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    raycaster.setFromCamera(mouse, e.camera);
+    const intersectObjects = [kitchenRef.current];
+    const intersects = raycaster.intersectObjects(intersectObjects, true);
+    if (intersects.length > 0 && kitchenRef.current.position.z > 24) {
+      const intersection = intersects[0];
+      const { point } = intersection;
+      robotRef.current.position.copy(point);
+    }
+  }
+
   return (
     <a.group ref={kitchenRef} {...props}
       onWheel={(e) => {handleWheel(e)}}
+      onPointerMove={(e) => {handlePointerMove(e)}}
     >
       <group position={[-.9, -12, -40]} scale={2.093}>
       <mesh
